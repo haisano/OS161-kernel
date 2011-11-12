@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>argtest</title>
+<body bgcolor=#ffffff>
+<h2 align=center>argtest</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+argtest - display arguments passed through execv
+
+<h3>Synopsis</h3>
+/testbin/argtest <em>args</em>
+
+<h3>Description</h3>
+
+argtest prints its arguments. This is likely to be helpful for testing
+execv during the basic system calls assignment.
+
+<h3>Requirements</h3>
+
+argtest uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+argument passing should work once the basic system calls are complete.
+
+</body>
+</html>

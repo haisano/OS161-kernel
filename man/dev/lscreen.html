@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>lscreen</title>
+<body bgcolor=#ffffff>
+<h2 align=center>lscreen</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+lscreen - LAMEbus memory-mapped screen
+
+<h3>Synopsis</h3>
+device lscreen* at lamebus*
+
+<h3>Description</h3>
+
+lscreen is the driver for the CS161 LAMEbus memory-mapped screen
+card. It does not provide any internal input buffering; that is
+expected to happen at a higher level.
+<p>
+
+Since the memory-mapped screen card is not actually available yet as
+of this writing, the driver has not been tested and probably does not
+work.
+<p>
+
+The <A HREF=con.html>system console</A> device can be attached to an
+lscreen instance.
+
+<h3>See Also</h3>
+<A HREF=lamebus.html>lamebus</A>
+
+</body>
+</html>

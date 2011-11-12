@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>OS/161 Sysadmin binaries</title>
+</head>
+<body bgcolor=#ffffff>
+
+<h2 align=center>OS/161 Sysadmin binaries (/sbin)</h2>
+
+<p align=center>
+<A HREF=..>Top</A> |
+<A HREF=../bin>Binaries</A> |
+<A HREF=../testbin>Test binaries</A> |
+<A HREF=../syscall>System calls</A> |
+<A HREF=../libc>C standard library</A> |
+<A HREF=../dev>Device drivers</A> |
+<A HREF=../misc>Miscellaneous</A>
+</p>
+<br>
+
+<ul>
+<li> <A HREF=dumpsfs.html>dumpsfs</A> - dump information about an 
+   SFS filesystem
+<li> <A HREF=halt.html>halt</A> - halt system
+<li> <A HREF=mksfs.html>mksfs</A> - create an SFS filesystem
+<li> <A HREF=poweroff.html>poweroff</A> - halt system and power it off
+<li> <A HREF=reboot.html>reboot</A> - reboot system
+</ul>
+
+</body>
+</html>

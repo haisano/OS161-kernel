@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>__time</title>
+<body bgcolor=#ffffff>
+<h2 align=center>__time</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+__time - get time of day
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;time.h&gt;<br>
+<br>
+time_t<br>
+__time(time_t *<em>seconds</em>, uint32_t *nanoseconds);
+
+<h3>Description</h3>
+
+The current time (in seconds and nanoseconds since midnight GMT on
+January 1, 1970) is retrieved. If <em>seconds</em> and/or
+<em>nanoseconds</em> are non-null, the corresponding components of the
+time are stored through those pointers. The time in seconds is also
+returned. 
+<p>
+
+<h3>Return Values</h3>
+
+__time returns 0 on success. On error, -1 is returned, and
+errno is set to indicate the error.
+
+<h3>Errors</h3>
+
+The following error is the only way __time should be capable of failing.
+
+<blockquote><table width=90%>
+<td width=10%>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>EFAULT</td>	<td><em>seconds</em> or <em>nanoseconds</em>
+			was an invalid non-NULL address.</td></tr>
+</table></blockquote>
+
+<h3>See Also</h3>
+
+<A HREF=../libc/time.html>time</A><br>
+
+</body>
+</html>

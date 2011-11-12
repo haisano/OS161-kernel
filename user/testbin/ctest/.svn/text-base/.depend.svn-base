@@ -1,0 +1,10 @@
+
+$(MYBUILDDIR)/ctest.o: \
+ ctest.c \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/stdlib.h
+

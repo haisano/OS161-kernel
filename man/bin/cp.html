@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>cp</title>
+<body bgcolor=#ffffff>
+<h2 align=center>cp</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+cp - copy files
+
+<h3>Synopsis</h3>
+/bin/cp <em>oldfile</em> <em>newfile</em>
+
+<h3>Description</h3>
+
+cp copies the file <em>oldfile</em> to the file <em>newfile</em>,
+overwriting <em>newfile</em> if it already exists.
+<p>
+
+cp supports no options.
+<p>
+
+<h3>Requirements</h3>
+
+cp uses the following syscalls:
+<ul>
+<li><A HREF=../syscall/open.html>open</A>
+<li><A HREF=../syscall/read.html>read</A>
+<li><A HREF=../syscall/write.html>write</A>
+<li><A HREF=../syscall/close.html>close</A>
+<li><A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+cp should function properly once the basic system calls assignment is
+completed.
+
+<h3>See Also</h3>
+
+<A HREF=ln.html>ln</A>, <A HREF=mv.html>mv<A>
+
+</body>
+</html>

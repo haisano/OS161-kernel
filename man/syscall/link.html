@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>link</title>
+<body bgcolor=#ffffff>
+<h2 align=center>link</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+link - create hard link to a file
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;unistd.h&gt;<br>
+<br>
+int<br>
+link(const char *<em>oldname</em>, const char *<em>newname</em>);
+
+<h3>Description</h3>
+
+link creates a new name, <em>newname</em>, for the file referred to by
+<em>oldname</em>. Henceforth, both names are equally valid ways to
+refer to the same file. The file is only deleted when all names are
+removed. This is a "hard link".
+<p>
+
+The creation of the new name is atomic. The two names must be on the
+same filesystem. Directories may not be hard-linked.
+<p>
+
+<h3>Return Values</h3>
+On success, link returns 0. On error, -1 is returned, and
+<A HREF=errno.html>errno</A> is set according to the error
+encountered.
+
+<h3>Errors</h3>
+
+The following error codes should be returned under the conditions
+given. Other error codes may be returned for other errors not
+mentioned here.
+
+<blockquote><table width=90%>
+<td width=10%>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>ENODEV</td>		<td>The device prefix of one of the names did
+				not exist.</td></tr>
+<tr><td>ENOTDIR</td>		<td>A non-final component of one of the names
+				was not a directory.</td></tr>
+<tr><td>ENOENT</td>		<td>A non-final component of <em>newname</em>  
+				did not exist.</td></tr>
+<tr><td>ENOENT</td>		<td><em>oldname</em> does not exist.</td></tr>
+<tr><td>EEXIST</td>		<td><em>newname</em> already exists.</td></tr>
+<tr><td>EISDIR</td>		<td><em>oldname</em> is a directory.</td></tr>
+<tr><td>EXDEV</td>		<td>The two names are on different
+				filesystems.</td></tr>
+<tr><td>EMLINK</td>		<td>There are already too many links to
+				<em>oldname</em>.</td></tr>
+<tr><td>ENOSPC</td>		<td>The filesystem involved is full.</td></tr>
+<tr><td>EIO</td>		<td>A hard I/O error occurred.</td></tr>
+<tr><td>EFAULT</td>		<td>One of the arguments was an invalid pointer.</td></tr>
+</table></blockquote>
+
+</body>
+</html>

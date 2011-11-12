@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>mkdir</title>
+<body bgcolor=#ffffff>
+<h2 align=center>mkdir</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+mkdir - create directory
+
+<h3>Synopsis</h3>
+/bin/mkdir <em>directory</em>
+
+<h3>Description</h3>
+
+mkdir creates the named directory. All intermediate components must
+already exist. If the named directory already exists, an error occurs.
+
+<h3>Requirements</h3>
+
+mkdir uses the following syscalls:
+<ul>
+<li> <A HREF=../syscall/mkdir.html>mkdir</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+mkdir should function properly once the file system assignment is
+completed.
+
+<h3>See Also</h3>
+
+<A HREF=rmdir.html>rmdir</A>
+
+</body>
+</html>

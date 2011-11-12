@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>faulter</title>
+<body bgcolor=#ffffff>
+<h2 align=center>faulter</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+faulter - commit address fault
+
+<h3>Synopsis</h3>
+/testbin/faulter
+
+<h3>Description</h3>
+
+faulter accesses an invalid memory address, thus crashing. It should
+be killed and not crash the entire system.
+
+<h3>Requirements</h3>
+
+faulter uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+faulter should work properly, that is, get killed with an address
+fault, once the basic system calls assignment is complete.
+
+</body>
+</html>

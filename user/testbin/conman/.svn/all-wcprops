@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/conman
+END
+build
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/conman/build
+END
+conman.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/conman/conman.c
+END
+.depend
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/conman/.depend
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/conman/Makefile
+END

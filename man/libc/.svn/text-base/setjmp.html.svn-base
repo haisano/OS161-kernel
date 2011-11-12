@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>setjmp</title>
+<body bgcolor=#ffffff>
+<h2 align=center>setjmp</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+setjmp, longjmp - non-local jump operations
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;setjmp.h&gt;<br>
+<br>
+int<br>
+setjmp(jmp_buf <em>jb</em>);<br>
+<br>
+void<br>
+longjmp(jmp_buf <em>jb</em>, int <em>returncode</em>);<br>
+
+<h3>Description</h3>
+
+setjmp saves the current stack frame and processor state in
+<em>jb</em>. A subsequent call to longjmp with the same <em>jb</em>
+causes execution to jump to where setjmp was called from.
+<p>
+
+If the stack frame that called setjmp returns before longjmp is
+called, the results are undefined.
+<p>
+
+<h3>Return Values</h3>
+
+When called, setjmp returns 0. When longjmp is called, it does not
+itself return, but instead causes setjmp to appear to return again,
+this time returning <em>returncode</em>.
+<p>
+
+If zero is passed <em>returncode</em>, it is forced to 1 instead.
+<p>
+
+</body>
+</html>

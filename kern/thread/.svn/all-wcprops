@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/thread
+END
+spl.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/thread/spl.c
+END
+spinlock.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/thread/spinlock.c
+END
+threadlist.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/thread/threadlist.c
+END
+synch.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/thread/synch.c
+END
+thread.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/thread/thread.c
+END
+clock.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/thread/clock.c
+END

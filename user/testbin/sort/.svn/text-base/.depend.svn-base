@@ -1,0 +1,11 @@
+
+$(MYBUILDDIR)/sort.o: \
+ sort.c \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/err.h
+

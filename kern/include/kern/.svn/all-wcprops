@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern
+END
+reboot.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/reboot.h
+END
+sfs.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/sfs.h
+END
+endian.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/endian.h
+END
+time.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/time.h
+END
+errmsg.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/errmsg.h
+END
+stattypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/stattypes.h
+END
+limits.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/limits.h
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/types.h
+END
+wait.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/wait.h
+END
+iovec.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/iovec.h
+END
+fcntl.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/fcntl.h
+END
+unistd.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/unistd.h
+END
+syscall.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/syscall.h
+END
+ioctl.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/ioctl.h
+END
+stat.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/stat.h
+END
+signal.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/signal.h
+END
+errno.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/errno.h
+END
+seek.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/seek.h
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/resource.h
+END
+socket.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/include/kern/socket.h
+END

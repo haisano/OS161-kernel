@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>triplesort</title>
+<body bgcolor=#ffffff>
+<h2 align=center>triplesort</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+triplesort - very large VM test
+
+<h3>Synopsis</h3>
+/testbin/triplesort
+
+<h3>Description</h3>
+
+triplesort runs three copies of <A HREF=sort.html>sort</A> at once.
+
+<h3>Requirements</h3>
+
+triplesort uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/fork.html>fork</A>
+<li> <A HREF=../syscall/execv.html>execv</A>
+<li> <A HREF=../syscall/waitpid.html>waitpid</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+triplesort should run properly once the VM assignment is complete.
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/arch/mips/include
+END
+specialreg.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/arch/mips/include/specialreg.h
+END
+tlb.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/arch/mips/include/tlb.h
+END
+trapframe.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/arch/mips/include/trapframe.h
+END
+current.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/arch/mips/include/current.h
+END
+spinlock.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/arch/mips/include/spinlock.h
+END
+vm.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/arch/mips/include/vm.h
+END
+types.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/arch/mips/include/types.h
+END
+elf.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/arch/mips/include/elf.h
+END
+thread.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/arch/mips/include/thread.h
+END

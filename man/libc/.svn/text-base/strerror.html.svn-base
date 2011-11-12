@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>strerror</title>
+<body bgcolor=#ffffff>
+<h2 align=center>strerror</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+strerror - get error message for error code
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;string.h&gt;<br>
+<br>
+const char *<br>
+strerror(int <em>code</em>);
+
+<h3>Description</h3>
+
+The error string for the error specified by <em>code</em> (see
+<A HREF=../syscall/errno.html>errno</A> for more information) is
+retrieved.
+<p>
+
+It is not itself an error to request error strings for out-of-range
+values of <em>code</em>, but the string returned under such
+circumstances may not be very enlightening when printed.
+
+<h3>Return Values</h3>
+
+The error string is returned.
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+
+$(MYBUILDDIR)/psort.ho: \
+ psort.c
+

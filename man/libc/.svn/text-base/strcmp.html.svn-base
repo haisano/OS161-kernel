@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>strcmp</title>
+<body bgcolor=#ffffff>
+<h2 align=center>strcmp</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+strcmp - compare strings
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;string.h&gt;<br>
+<br>
+int<br>
+strcmp(const char *<em>str1</em>, const char *<em>str2</em>);
+
+<h3>Description</h3>
+
+The two strings <em>str1</em> and <em>str2</em> are compared
+lexicographically.
+
+<h3>Return Values</h3>
+
+If <em>str1</em> sorts before <em>str2</em>, -1 is returned.
+<p>
+
+If <em>str1</em> sorts after <em>str2</em>, 1 is returned.
+<p>
+
+If <em>str1</em> is the same as <em>str2</em>, 0 is returned.
+<p>
+
+</body>
+</html>

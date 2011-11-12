@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>rm</title>
+<body bgcolor=#ffffff>
+<h2 align=center>rm</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+rm - remove (unlink) files
+
+<h3>Synopsis</h3>
+/bin/rm <em>file...</em>
+
+<h3>Description</h3>
+
+rm deletes the files specified on its command line. (If one of the
+filenames specified is one of several hard links to the same file, the
+actual file is only erased when all links are removed.)
+<p>
+
+Using rm on directories produces an error. Use 
+<A HREF=rmdir.html>rmdir</A> to remove
+directories. 
+
+<h3>Requirements</h3>
+
+rm uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/remove.html>remove</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+rm should function properly once the file system assignment is
+completed.
+
+<h3>Restrictions</h3>
+
+<A HREF=../dev/emu.html>emufs</A> does not support rm. (This is
+intentional.)
+
+<h3>See Also</h3>
+
+<A HREF=rmdir.html>rmdir</A>
+
+</body>
+</html>

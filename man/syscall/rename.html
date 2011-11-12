@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>rename</title>
+<body bgcolor=#ffffff>
+<h2 align=center>rename</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+rename - rename or move a file
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;unistd.h&gt;<br>
+<br>
+int<br>
+rename(const char *<em>oldname</em>, const char *<em>newname</em>);
+
+<h3>Description</h3>
+
+The file (or other object) referenced by <em>oldname</em> is given the
+name <em>newname</em>, and the name <em>oldname</em> is removed. If
+<em>newname</em> already exists, it is removed as well. (The semantics
+for removing files and directories described under 
+<A HREF=remove.html>remove</A> and <A HREF=rmdir.html>rmdir</A>
+must be honored.)
+<p>
+
+If <em>newname</em> exists, it must be a directory if and only if
+<em>oldname</em> also is.
+<p>
+
+If components of the path prefix of <em>newname</em> do not exist or
+are not directories, rename fails. Additionally, <em>oldname</em> and
+<em>newname</em> must refer to names on the same filesystem.
+<p>
+
+If <em>oldname</em> and <em>newname</em> are the same file, rename
+succeeds and the state of the filesystem is not altered.
+<p>
+
+Rename must be atomic; no other process on the system should be able
+to see the filesystem in a state where both (or neither)
+<em>oldname</em> and <em>newname</em> name the file. Additionally, if
+the system crashes, at least one name for the file must remain.
+<p>
+
+If <em>oldname</em> is a directory, <em>newname</em> must not refer to
+a subdirectory of <em>oldname</em>, as this would create a cycle in the
+directory tree.
+<p>
+
+Renaming the "." or ".." entries in directories is prohibited.
+<p>
+
+<h3>Return Values</h3>
+On success, rename returns 0. On error, -1 is returned, and
+<A HREF=errno.html>errno</A> is set according to the error
+encountered.
+
+<h3>Errors</h3>
+
+The following error codes should be returned under the conditions
+given. Other error codes may be returned for other errors not
+mentioned here.
+
+<blockquote><table width=90%>
+<td width=10%>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>ENODEV</td>		<td>The device prefix of one of the names did
+				not exist.</td></tr>
+<tr><td>ENOTDIR</td>	<td>A non-final component of one of the names
+				was not a directory.</td></tr>
+<tr><td>ENOENT</td>		<td>A non-final component of <em>newname</em>   
+				did not exist.</td></tr>
+<tr><td>ENOENT</td>		<td><em>oldname</em> does not exist.</td></tr>
+<tr><td>ENOTDIR</td>	<td><em>oldname</em> is a directory, and 
+				<em>newname</em> is not.</td></tr>
+<tr><td>EISDIR</td>		<td><em>oldname</em> is not a directory, and 
+				<em>newname</em> is.</td></tr>
+<tr><td>ENOTEMPTY</td>	<td><em>newname</em> is a directory, and it is
+				not empty.</td>   
+<tr><td>EXDEV</td>		<td>The two names are on different filesystems.</td></tr>
+<tr><td>EINVAL</td>		<td><em>newname</em> is a subdirectory of
+				<em>oldname</em>.</td></tr>
+<tr><td>EINVAL</td>		<td>An attempt was made to rename "."</td></tr>
+<tr><td>ENOSPC</td>		<td>The filesystem involved is full.</td></tr>
+<tr><td>EIO</td>		<td>A hard I/O error occurred.</td></tr>
+<tr><td>EFAULT</td>		<td>One of the arguments was an invalid pointer.</td></tr>
+
+</table></blockquote>
+
+As with rmdir, attempts to rename ".." may generate either EINVAL or
+ENOTEMPTY. 
+
+</body>
+</html>

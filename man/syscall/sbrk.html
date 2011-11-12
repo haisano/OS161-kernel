@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>sbrk</title>
+<body bgcolor=#ffffff>
+<h2 align=center>sbrk</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+sbrk - set process break (allocate memory)
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;unistd.h&gt;<br>
+<br>
+void *<br>
+sbrk(intptr_t <em>amount</em>);
+
+<h3>Description</h3>
+
+The "break" is the end address of a process's heap region. The sbrk
+call adjusts the "break" by the amount <em>amount</em>. It returns the
+old "break". Thus, to determine the current "break", call sbrk(0).
+<p>
+
+The heap region is initially empty, so at process startup, the
+beginning of the heap region is the same as the end and may thus be
+retrieved using sbrk(0).
+<p>
+
+In OS/161, the initial "break" must be page-aligned, and sbrk only
+need support values of <em>amount</em> that result in page-aligned
+"break" addresses. Other values of <em>amount</em> may be rejected.
+(This may simplify the implementation. On the other hand, you may
+choose to support unaligned values anyway, as that may simplify your
+malloc code.)
+<p>
+
+Traditionally, the initial "break" is specifically defined to be the
+end of the BSS (uninitialized data) region, and any <em>amount</em>,
+page-aligned or not, may legally be used with sbrk.
+<p>
+
+Ordinarily, user-level code should call
+<A HREF=../libc/malloc.html>malloc</A> for memory allocation. The
+sbrk interface is intended only to be the back-end interface for
+malloc. Mixing calls to malloc and sbrk will likely confuse malloc and
+produces undefined behavior.
+<p>
+
+While one can lower the "break" by passing negative values of
+<em>amount</em>, one may not set the end of the heap to an address
+lower than the beginning of the heap. Attempts to do so must be
+rejected. 
+<p>
+
+<h3>Return Values</h3>
+
+On success, sbrk returns the previous value of the "break".  On error,
+((void *)-1) is returned, and <A HREF=errno.html>errno</A> is set
+according to the error encountered.
+
+<h3>Errors</h3>
+
+The following error codes should be returned under the conditions
+given. Other error codes may be returned for other errors not
+mentioned here.
+
+<blockquote><table width=90%>
+<td width=10%>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>ENOMEM</td>	<td>Sufficient virtual memory to satisfy the
+				request was not available, or the
+				process has reached the limit of the
+				memory it is allowed to allocate.</td></tr>
+<tr><td>EINVAL</td>	<td>The request would move the "break" below
+				its initial value.</td></tr>
+</table></blockquote>
+
+<h3>Restrictions</h3>
+
+While you can return pages that happen to be at the end of the heap to
+the system, there is no way to use the sbrk interface to return unused
+pages in the middle of the heap. If you wish to do this, you will need
+to design a new or supplemental interface.
+
+</body>
+</html>

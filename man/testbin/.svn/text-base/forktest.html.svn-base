@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>forktest</title>
+<body bgcolor=#ffffff>
+<h2 align=center>forktest</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+forktest - test fork system call
+
+<h3>Synopsis</h3>
+/testbin/forktest
+
+<h3>Description</h3>
+
+forktest forks a few times and tries to make sure each fork has its
+own data and stack.
+
+<h3>Requirements</h3>
+
+forktest uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/fork.html>fork</A>
+<li> <A HREF=../syscall/getpid.html>getpid</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+forktest should run successfully once the VM assignment is completed.
+
+</body>
+</html>

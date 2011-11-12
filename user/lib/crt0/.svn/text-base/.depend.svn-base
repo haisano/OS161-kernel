@@ -1,0 +1,6 @@
+
+$(MYBUILDDIR)/crt0.o: \
+ mips/crt0.S \
+ $(INSTALLTOP)/include/kern/mips/regdefs.h \
+ $(INSTALLTOP)/include/kern/syscall.h
+

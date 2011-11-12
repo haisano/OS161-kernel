@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>realloc</title>
+<body bgcolor=#ffffff>
+<h2 align=center>realloc</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+realloc - resize allocated memory
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;stdlib.h&gt;<br>
+<br>
+void *<br>
+realloc(void *<em>ptr</em>, size_t <em>newsize</em>);
+
+<h3>Description</h3>
+
+realloc attempts to change the size of the memory block pointed to by
+<em>ptr</em> to <em>newsize</em>, causing the block to shrink or grow
+as necessary. The size of NULL is treated as 0. Any newly allocated
+space has undefined contents; the contents of existing space not
+discarded by shrinkage are preserved.
+<p>
+
+<em>ptr</em> be NULL or have been previously returned by
+<A HREF=malloc.html>malloc</A>, <A HREF=calloc.html>calloc</A>, or
+realloc.
+<p>
+
+The alignment and other restrictions described for 
+<A HREF=malloc.html>malloc</A> apply equally to realloc.
+<p>
+
+<h3>Return Values</h3>
+realloc returns a pointer to the resized memory block. This may not be
+the same pointer as <em>ptr</em> if for internal reasons it is
+necessary to move the memory block. If such a move takes place, the
+old block is invalidated and <em>ptr</em> becomes invalid.
+<p>
+
+If the resize operation cannot be performed, NULL is returned, in
+which case the original block pointed to by <em>ptr</em> is untouched
+and remains valid.
+<p>
+
+<h3>See Also</h3>
+<A HREF=calloc.html>calloc</A>,
+<A HREF=malloc.html>malloc</A>,
+<A HREF=free.html>free</A>
+
+</body>
+</html>

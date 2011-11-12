@@ -1,0 +1,14 @@
+
+$(MYBUILDDIR)/sfsck.ho: \
+ sfsck.c \
+ ../mksfs/support.h \
+ $(INSTALLTOP)/hostinclude/kern/sfs.h \
+ $(INSTALLTOP)/hostinclude/hostcompat.h \
+ ../mksfs/disk.h
+$(MYBUILDDIR)/disk.ho: \
+ ../mksfs/disk.c \
+ ../mksfs/support.h \
+ ../mksfs/disk.h
+$(MYBUILDDIR)/support.ho: \
+ ../mksfs/support.c
+

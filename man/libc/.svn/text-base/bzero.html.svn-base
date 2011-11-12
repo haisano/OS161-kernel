@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>bzero</title>
+<body bgcolor=#ffffff>
+<h2 align=center>bzero</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+bzero - zero out memory
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;string.h&gt;<br>
+<br>
+void<br>
+bzero(void *<em>buf</em>, size_t <em>len</em>);
+
+<h3>Description</h3>
+
+The region of memory pointed to by <em>buf</em>, of length
+<em>len</em>, is zeroed out.
+
+</body>
+</html>

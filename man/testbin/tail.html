@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>tail</title>
+<body bgcolor=#ffffff>
+<h2 align=center>tail</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+tail - print part of a file
+
+<h3>Synopsis</h3>
+/testbin/tail <em>file</em> <em>location</em>
+
+<h3>Description</h3>
+
+tail prints the contents of a file starting at offset
+<em>location</em> within it, skipping the beginning.
+<p>
+
+It is somewhat similar in concept to the Unix tail command, but is not
+compatible, which is why it lives in testbin.
+
+<h3>Requirements</h3>
+
+tail uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/open.html>open</A>
+<li> <A HREF=../syscall/read.html>read</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/lseek.html>lseek</A>
+<li> <A HREF=../syscall/close.html>close</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+tail should work once the basic system calls are complete, but will
+probably be most useful as a debugging tool while working on the file
+system assignment.
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>_exit</title>
+<body bgcolor=#ffffff>
+<h2 align=center>_exit</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+_exit - terminate process
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;unistd.h&gt;<br>
+<br>
+void<br>
+_exit(int <em>exitcode</em>);
+
+<h3>Description</h3>
+
+Cause the current process to exit. The exit code <em>exitcode</em> is
+reported back to other process(es) via the 
+<A HREF=waitpid.html>waitpid()</A> call. The process id of the exiting
+process should not be reused until all processes interested in
+collecting the exit code with waitpid have done so. (What "interested"
+means is intentionally left vague; you should design this.)
+
+<h3>Return Values</h3>
+_exit does not return.
+
+</body>
+</html>

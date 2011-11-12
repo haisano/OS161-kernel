@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>randcall</title>
+<body bgcolor=#ffffff>
+<h2 align=center>randcall</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+randcall - make randomized system calls
+
+<h3>Synopsis</h3>
+/testbin/randcall [-f] [-c <em>count</em>] [-r <em>seed</em>] <em>callset</em>
+
+<h3>Description</h3>
+
+randcall makes randomized system calls, that is, system calls with
+completely random arguments. The <em>callset</em> determines which
+list of system calls it uses; it is either "all", which does
+everything, or a number that identifies one of the assignments, in
+which case it exercises all the system calls that are supposed to be
+working when that assignment is complete. (If the lists compiled into
+randcall are wrong, contact your course staff.)
+<p>
+
+Ordinarily, in case some of these calls cause process termination,
+randcall forks before making each call. This can be slow, so the -f
+option can be used to suppress this behavior.
+<p>
+
+The -c <em>count</em> option tells randcall to make <em>count</em>
+iterations through the list of calls it's using. (It always goes
+through the list sequentially.) The default count is 100.
+<p>
+
+The -r <em>seed</em> option allows one to set the pseudorandom seed
+used by randcall to generate the call arguments. The default seed is
+0.
+<p>
+
+randcall prints what it's doing, so if it blows up you should be able
+to see what happened.
+<p>
+
+The system calls that do not take arguments are not on any of the call
+lists. Neither is <A HREF=../syscall/reboot.html>reboot</A>, to prevent
+accidental system shutdown.
+
+<h3>Requirements</h3>
+
+randcall should never under any circumstances crash the kernel, no
+matter what call list is in use.
+
+<h3>Bugs</h3>
+
+There should be an option to seed the random generator from 
+<A HREF=../dev/random.html>random:</A>.
+
+</body>
+</html>

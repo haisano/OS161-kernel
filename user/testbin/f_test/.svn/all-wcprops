@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/f_test
+END
+build
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/f_test/build
+END
+f_write.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/f_test/f_write.c
+END
+f_read.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/f_test/f_read.c
+END
+f_test.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/f_test/f_test.c
+END
+f_hdr.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/f_test/f_hdr.h
+END
+.depend
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/f_test/.depend
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/f_test/Makefile
+END

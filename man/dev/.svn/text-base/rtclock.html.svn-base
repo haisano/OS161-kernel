@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>rtclock</title>
+<body bgcolor=#ffffff>
+<h2 align=center>rtclock</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+rtclock - realtime clock
+
+<h3>Synopsis</h3>
+device rtclock0 at ltimer*
+
+<h3>Description</h3>
+
+The rtclock device is the generalized interface to the time of day. It
+provides the in-kernel function gettime().
+<p>
+
+Only the first clock attached is used. If no clock at all is found,
+the system will panic if gettime() is called.
+<p>
+
+<h3>See Also</h3>
+<A HREF=ltimer.html>ltimer</A>
+
+</body>
+</html>

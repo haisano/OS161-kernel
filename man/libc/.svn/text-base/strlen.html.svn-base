@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>strlen</title>
+<body bgcolor=#ffffff>
+<h2 align=center>strlen</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+strlen - determine length of string
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;string.h&gt;<br>
+<br>
+size_t<br>
+strlen(const char *<em>string</em>);
+
+<h3>Description</h3>
+
+strlen returns the length of the string <em>string</em>. The length
+does not include the null terminator.
+
+</body>
+</html>

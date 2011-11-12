@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>dup2</title>
+<body bgcolor=#ffffff>
+<h2 align=center>dup2</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+dup2 - clone file handles
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;unistd.h&gt;<br>
+<br>
+int<br>
+dup2(int <em>oldfd</em>, int <em>newfd</em>);
+
+<h3>Description</h3>
+
+dup2 clones the file handle <em>oldfd</em> onto the file handle
+<em>newfd</em>. If <em>newfd</em> names an open file, that file is
+closed.
+<p>
+
+The two handles refer to the same "open" of the file - that is,
+they are references to the same object and share the same seek
+pointer. Note that this is different from opening the same file
+twice. 
+<p>
+
+dup2 is most commonly used to relocate opened files onto
+STDIN_FILENO, STDOUT_FILENO, and/or STDERR_FILENO.
+<p>
+
+Both filehandles must be non-negative.
+<p>
+
+Using dup2 to clone a file handle onto itself has no effect.
+<p>
+
+(The "2" in "dup2" arises from the existence of an older and less
+powerful Unix system call "dup".)
+
+<h3>Return Values</h3>
+dup2 returns <em>newfd</em>. On error, -1 is returned, and
+<A HREF=errno.html>errno</A> is set according to the error
+encountered.
+
+<h3>Errors</h3>
+
+The following error codes should be returned under the conditions
+given. Other error codes may be returned for other errors not
+mentioned here.
+
+<blockquote><table width=90%>
+<tr><td width=10%>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>EBADF</td>		<td><em>oldfd</em> is not a valid file handle,
+				or <em>newfd</em> is a value that
+				cannot be a valid file handle.</td></tr>
+<tr><td>EMFILE</td>		<td>The process's file table was full, or a
+				process-specific limit on open files
+				was reached.</td></tr>
+</table></blockquote>
+
+</body>
+</html>

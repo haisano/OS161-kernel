@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>hash</title>
+<body bgcolor=#ffffff>
+<h2 align=center>hash</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+hash - compute a simple hash function of a file
+
+<h3>Synopsis</h3>
+/testbin/hash <em>file</em>
+<br>
+host-hash <em>file</em>
+
+<h3>Description</h3>
+
+hash takes a file and computes a hash value for it by adding all the
+bytes in the file together modulo a prime.
+<p>
+
+hash is by default also compiled for the System/161 host OS so you can
+cross-check the answers you get.
+
+<h3>Requirements</h3>
+
+hash uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/open.html>open</A>
+<li> <A HREF=../syscall/read.html>read</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/close.html>close</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+Once the basic system calls are complete, hash should work on any file
+the system supports. However, it will probably of most use for testing
+while working on the file system assignment.
+
+</body>
+</html>

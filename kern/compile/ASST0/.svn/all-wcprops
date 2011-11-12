@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/compile/ASST0
+END
+build.log
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/compile/ASST0/build.log
+END
+opt-synchprobs.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/compile/ASST0/opt-synchprobs.h
+END
+opt-dumbvm.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/compile/ASST0/opt-dumbvm.h
+END
+kernel
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/compile/ASST0/kernel
+END
+opt-sfs.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/compile/ASST0/opt-sfs.h
+END
+version
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/compile/ASST0/version
+END
+autoconf.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/compile/ASST0/autoconf.c
+END
+vers.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/compile/ASST0/vers.c
+END
+autoconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/compile/ASST0/autoconf.h
+END
+opt-netfs.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/compile/ASST0/opt-netfs.h
+END
+opt-noasserts.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/compile/ASST0/opt-noasserts.h
+END
+files.mk
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/compile/ASST0/files.mk
+END
+opt-net.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/compile/ASST0/opt-net.h
+END
+.depend
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/compile/ASST0/.depend
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/compile/ASST0/Makefile
+END

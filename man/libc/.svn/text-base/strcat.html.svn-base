@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>strcat</title>
+<body bgcolor=#ffffff>
+<h2 align=center>strcat</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+strcat - concatenate strings
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;string.h&gt;<br>
+<br>
+char *<br>
+strcat(char *<em>dest</em>, const char *<em>src</em>);
+
+<h3>Description</h3>
+
+strcat appends the contents of the string <em>src</em> to the string
+<em>dest</em>. 
+
+<h3>Restrictions</h3>
+
+If <em>dest</em> does not point to enough space to hold both strings,
+the resulting behavior is undefined.
+<p>
+
+If the memory areas pointed to by <em>dest</em> and <em>src</em>
+overlap, the behavior is undefined.
+
+<h3>Return Values</h3>
+strcat returns <em>dest</em>.
+
+</body>
+</html>

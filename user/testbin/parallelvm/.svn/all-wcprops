@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/parallelvm
+END
+build
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/parallelvm/build
+END
+parallelvm.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/parallelvm/parallelvm.c
+END
+.depend
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/parallelvm/.depend
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/parallelvm/Makefile
+END

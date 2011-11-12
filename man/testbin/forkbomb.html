@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>forkbomb</title>
+<body bgcolor=#ffffff>
+<h2 align=center>forkbomb</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+forkbomb - create hundreds of processes
+
+<h3>Synopsis</h3>
+/testbin/forkbomb
+
+<h3>Description</h3>
+
+forkbomb does
+<pre>
+   while (1) fork();
+</pre>
+
+doing a bit of additional checking similar to that done by 
+<A HREF=forktest.html>forktest</A>.
+<p> 
+
+<strong>
+DO NOT RUN THIS ON A REAL SYSTEM - IT WILL GRIND TO A HALT AND
+PEOPLE WILL COME AFTER YOU WIELDING BASEBALL BATS AND/OR THE AD
+BOARD<sup><font size=-1>*</font></sup>. WE WARNED YOU.
+</strong>
+<p>
+
+<font size=-1><i><sup>*</sup> The Administrative Board of Harvard
+College handles formal disciplinary action.</i></font>
+
+<h3>Requirements</h3>
+
+forkbomb uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/fork.html>fork</A>
+<li> <A HREF=../syscall/getpid.html>getpid</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+We don't expect your system to withstand this without grinding to
+a halt, but once your basic system calls are complete it shouldn't
+crash. Likewise for after your virtual memory system is complete.
+<p>
+
+Note that this may turn out to be hard to achieve in practice. Don't
+spend much time fixing problems forkbomb triggers that won't arise
+under more normal operation. (If in doubt, consult the course staff.)
+
+</body>
+</html>

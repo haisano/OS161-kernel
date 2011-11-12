@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>mv</title>
+<body bgcolor=#ffffff>
+<h2 align=center>mv</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+mv - rename or move files
+
+<h3>Synopsis</h3>
+/bin/mv <em>oldname</em> <em>newname</em>
+
+<h3>Description</h3>
+
+mv renames the filesystem object specified by <em>oldname</em> so that
+it is subsequently named <em>newname</em>. Both files and directories
+can be renamed or moved into other parts of the filesystem tree.
+However, devices may not be renamed and filesystem objects may not be
+moved across filesystems.
+<p>
+
+mv accepts no options.
+
+<h3>Requirements</h3>
+
+mv uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/rename.html>rename</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+mv should function properly once the file system assignment is
+completed.
+
+<h3>See Also</h3>
+
+<A HREF=cp.html>cp</A>, <A HREF=ln.html>ln<A>
+
+</body>
+</html>

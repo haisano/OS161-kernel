@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>rmdir</title>
+<body bgcolor=#ffffff>
+<h2 align=center>rmdir</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+rmdir - remove directory
+
+<h3>Synopsis</h3>
+/bin/rmdir <em>directory</em>
+
+<h3>Description</h3>
+
+rmdir removes the specified directory. The directory must be empty.
+<p>
+
+It is an error to attempt to remove the . or .. names in a directory,
+or to apply rmdir to a filesystem object that is not a directory.
+<p>
+
+<h3>Requirements</h3>
+
+rmdir uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/rmdir.html>rmdir</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+rmdir should function properly once the file system assignment is
+completed.
+
+<h3>Restrictions</h3>
+
+<A HREF=../dev/emu.html>emufs</A> does not support rmdir. (This is
+intentional.)
+
+<h3>See Also</h3>
+
+<A HREF=mkdir.html>mkdir</A>, <A HREF=rm.html>rm</A>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>OS/161 Binaries</title>
+</head>
+<body bgcolor=#ffffff>
+
+<h2 align=center>OS/161 Binaries (/bin)</h2>
+
+<p align=center>
+<A HREF=..>Top</A> |
+<A HREF=../sbin>Sysadmin binaries</A> |
+<A HREF=../testbin>Test binaries</A> |
+<A HREF=../syscall>System calls</A> |
+<A HREF=../libc>C standard library</A> |
+<A HREF=../dev>Device drivers</A> |
+<A HREF=../misc>Miscellaneous</A>
+</p>
+<br>
+
+<ul>
+<li> <A HREF=cat.html>cat</A> - concatenate and print files
+<li> <A HREF=cp.html>cp</A> - copy files
+<li> <A HREF=false.html>false</A> - return false value
+<li> <A HREF=ln.html>ln</A> - link files
+<li> <A HREF=ls.html>ls</A> - list files or directory contents
+<li> <A HREF=mkdir.html>mkdir</A> - create directory
+<li> <A HREF=mv.html>mv</A> - rename or move files
+<li> <A HREF=pwd.html>pwd</A> - print working directory
+<li> <A HREF=rm.html>rm</A> - remove (unlink) files
+<li> <A HREF=rmdir.html>rmdir</A> - remove directory
+<li> <A HREF=sh.html>sh</A> - user command shell
+<li> <A HREF=sync.html>sync</A> - synchronize buffers to disk
+<li> <A HREF=true.html>true</A> - return true value
+</ul>
+
+</body>
+</html>

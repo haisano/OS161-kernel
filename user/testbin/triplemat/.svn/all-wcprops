@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/triplemat
+END
+build
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/triplemat/build
+END
+triple.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/triplemat/triple.c
+END
+triplemat.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/triplemat/triplemat.c
+END
+triple.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/triplemat/triple.h
+END
+.depend
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/triplemat/.depend
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/triplemat/Makefile
+END

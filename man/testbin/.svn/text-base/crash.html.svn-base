@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>crash</title>
+<body bgcolor=#ffffff>
+<h2 align=center>crash</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+crash - commit various exceptions
+
+<h3>Synopsis</h3>
+/testbin/crash [<em>operation</em>]
+
+<h3>Description</h3>
+
+crash will perform any one of fourteen illegal processor operations,
+any one of which should get it killed without causing the whole system
+to crash.
+<p>
+
+The operations are coded `a' through `n' and may be chosen on the
+command line. If no operation is chosen, a menu is displayed and a
+choice solicited.
+<p>
+
+<h3>Restrictions</h3>
+
+Test `f', which writes into the process's own code segment, will only
+cause a processor exception if you implement read-only code segments.
+Since this is not required, it is not required that test `f' pass.
+<p>
+
+However, using test `f' must not under any circumstances corrupt the
+code in the copy of crash on disk!
+
+<h3>Requirements</h3>
+
+crash uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/read.html>read</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+crash should operate properly once the basic system call assignment is
+complete.
+
+</body>
+</html>

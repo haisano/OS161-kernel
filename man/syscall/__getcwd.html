@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>__getcwd</title>
+<body bgcolor=#ffffff>
+<h2 align=center>__getcwd</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+__getcwd - get name of current working directory (backend)
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;unistd.h&gt;<br>
+<br>
+int<br>
+__getcwd(char *<em>buf</em>, size_t <em>buflen</em>);
+
+<h3>Description</h3>
+
+The name of the current directory is computed and stored in
+<em>buf</em>, an area of size <em>buflen</em>. The length of data
+actually stored, which must be non-negative, is returned.
+<p>
+
+Note: this call behaves like <A HREF=read.html>read</A> - the name
+stored in <em>buf</em> is not 0-terminated.
+<p>
+
+This function is not meant to be called except by the C library;
+application programmers should use <A HREF=../libc/getcwd.html>getcwd</A>
+instead.
+
+<h3>Return Values</h3>
+On success, __getcwd returns the length of the data returned. 
+On error, -1 is returned, and <A HREF=errno.html>errno</A>
+is set according to the error encountered.
+
+<h3>Errors</h3>
+
+The following error codes should be returned under the conditions
+given. Other error codes may be returned for other errors not
+mentioned here.
+
+<blockquote><table width=90%>
+<td width=10%>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>ENOENT</td>	<td>A component of the pathname no longer exists.</td></tr>
+<tr><td>EIO</td>		<td>A hard I/O error occurred.</td></tr>
+<tr><td>EFAULT</td>		<td><em>buf</em> points to an invalid address.</td></tr>
+</table></blockquote>
+
+</body>
+</html>

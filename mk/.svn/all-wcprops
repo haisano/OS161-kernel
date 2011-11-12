@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/mk
+END
+os161.hostlib.mk
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/mk/os161.hostlib.mk
+END
+os161.hostprog.mk
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/mk/os161.hostprog.mk
+END
+os161.config.mk
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/mk/os161.config.mk
+END
+os161.lib.mk
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/mk/os161.lib.mk
+END
+os161.includes.mk
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/mk/os161.includes.mk
+END
+os161.prog.mk
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/mk/os161.prog.mk
+END
+os161.man.mk
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/mk/os161.man.mk
+END
+os161.config-mips.mk
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/mk/os161.config-mips.mk
+END
+os161.kernel.mk
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/mk/os161.kernel.mk
+END
+os161.baserules.mk
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/mk/os161.baserules.mk
+END
+os161.hostcompile.mk
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/mk/os161.hostcompile.mk
+END
+os161.subdir.mk
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/mk/os161.subdir.mk
+END
+os161.compile.mk
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/mk/os161.compile.mk
+END
+os161.mkdirs.mk
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/mk/os161.mkdirs.mk
+END
+installheaders.sh
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/mk/installheaders.sh
+END

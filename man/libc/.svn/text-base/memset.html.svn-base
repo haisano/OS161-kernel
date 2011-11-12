@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>memset</title>
+<body bgcolor=#ffffff>
+<h2 align=center>memset</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+memset - initialize region of memory
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;string.h&gt;<br>
+<br>
+void *<br>
+memset(void *<em>buf</em>, int <em>chr</em>, size_t <em>len</em>);
+
+<h3>Description</h3>
+
+The memory region pointed to by <em>buf</em>, of length <em>len</em>,
+is initialized by setting each location of it to <em>chr</em>
+(converted to unsigned char).
+
+<h3>Return Values</h3>
+memset returns <em>buf</em>.
+
+</body>
+</html>

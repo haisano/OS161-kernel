@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/randcall
+END
+build
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/randcall/build
+END
+calls.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/randcall/calls.c
+END
+gencalls.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/randcall/gencalls.sh
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/randcall/main.c
+END
+callspecs.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/randcall/callspecs.txt
+END
+extern.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/randcall/extern.h
+END
+.depend
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/randcall/.depend
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/randcall/Makefile
+END

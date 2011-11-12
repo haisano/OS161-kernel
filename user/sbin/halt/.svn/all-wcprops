@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/sbin/halt
+END
+build
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/sbin/halt/build
+END
+halt.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/sbin/halt/halt.c
+END
+.depend
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/sbin/halt/.depend
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/sbin/halt/Makefile
+END

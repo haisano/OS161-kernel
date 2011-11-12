@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>free</title>
+<body bgcolor=#ffffff>
+<h2 align=center>free</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+free - release/deallocate memory
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;stdlib.h&gt;<br>
+<br>
+void<br>
+malloc(void *<em>ptr</em>);
+
+<h3>Description</h3>
+
+free releases a block of memory previously allocated with
+<A HREF=malloc.html>malloc</A>, <A HREF=calloc.html>calloc</A>,
+or <A HREF=realloc.html>realloc</A>.
+<p>
+
+Once free has been called, <em>ptr</em> is no longer valid and
+attempts to dereference it result in undefined behavior.
+(Pedantically, in fact, even using the <strong>value</strong> of
+<em>ptr</em> may produce undefined behavior.) Passing <em>ptr</em> to
+free a second or subsequent time (unless of course the same pointer
+value is again returned from malloc) is particularly likely to provoke
+undefined behavior in most implementations.
+<p>
+
+free(NULL) has no effect.
+<p>
+
+In practice it is desirable for implementations of free to detect, to
+the extent practically possible, pointers that were not previously
+allocated by one of the above functions or that are passed to free
+multiple times. However, this can be difficult and there is no useful
+standard mechanism for error reporting.
+<p>
+
+free does not necessarily unmap free memory or return it to the
+operating system, but may do so if it chooses.
+
+<h3>Return Values</h3>
+free returns no value.
+
+<h3>See Also</h3>
+<A HREF=calloc.html>calloc</A>,
+<A HREF=malloc.html>malloc</A>,
+<A HREF=realloc.html>realloc</A>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>rmtest</title>
+<body bgcolor=#ffffff>
+<h2 align=center>rmtest</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+rmtest - test removing open files
+
+<h3>Synopsis</h3>
+/testbin/rmtest
+
+<h3>Description</h3>
+
+rmtest deletes a file while it's open and then attempts to do further
+I/O to it, and tries to check that the right things happen.
+
+<h3>Requirements</h3>
+
+rmtest uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/fork.html>fork</A>
+<li> <A HREF=../syscall/execv.html>execv</A>
+<li> <A HREF=../syscall/waitpid.html>waitpid</A>
+<li> <A HREF=../syscall/open.html>open</A>
+<li> <A HREF=../syscall/read.html>read</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/lseek.html>lseek</A>
+<li> <A HREF=../syscall/close.html>close</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+rmtest also spawns a copy of <A HREF=../bin/rm.html>/bin/rm</A>, which
+uses these system calls:
+<ul>
+<li> <A HREF=../syscall/remove.html>remove</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+rmtest should run correctly once the file system assignment is
+complete.
+
+<h3>Bugs</h3>
+
+There's no particular reason it should use /bin/rm instead of calling
+<A HREF=../syscall/remove.html>remove</A> itself. But I guess it makes
+life more exciting.
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>triplemat</title>
+<body bgcolor=#ffffff>
+<h2 align=center>triplemat</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+triplemat - very large VM test
+
+<h3>Synopsis</h3>
+/testbin/triplemat
+
+<h3>Description</h3>
+
+triplemat runs three copies of <A HREF=matmult.html>matmult</A> at once.
+
+<h3>Requirements</h3>
+
+triplemat uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/fork.html>fork</A>
+<li> <A HREF=../syscall/execv.html>execv</A>
+<li> <A HREF=../syscall/waitpid.html>waitpid</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+triplemat should run properly once the VM assignment is complete.
+
+</body>
+</html>

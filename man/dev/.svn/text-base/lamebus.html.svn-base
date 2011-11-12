@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>lamebus</title>
+<body bgcolor=#ffffff>
+<h2 align=center>lamebus</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+lamebus - driver for LAMEbus system bus
+
+<h3>Synopsis</h3>
+device lamebus0
+
+<h3>Description</h3>
+
+LAMEbus is the system bus for System/161. This driver takes care of
+managing the bus controller, distributing interrupts, and similar
+issues. It serves mostly as an attachment point for other drivers.
+
+<h3>See Also</h3>
+<A HREF=emu.html>emu</A>,
+<A HREF=lhd.html>lhd</A>,
+<A HREF=lnet.html>lnet</A>,
+<A HREF=lrandom.html>lrandom</A>,
+<A HREF=lscreen.html>lscreen</A>,
+<A HREF=lser.html>lser</A>,
+<A HREF=ltimer.html>ltimer</A>
+
+</body>
+</html>

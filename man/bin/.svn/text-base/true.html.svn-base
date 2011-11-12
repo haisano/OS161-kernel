@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>true</title>
+<body bgcolor=#ffffff>
+<h2 align=center>true</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+true - return true value
+
+<h3>Synopsis</h3>
+/bin/true
+
+<h3>Description</h3>
+
+true exits with exit code 0, signifying success.
+
+<h3>Requirements</h3>
+
+true uses the <A HREF=../syscall/_exit.html>_exit</A> system call.
+<p>
+
+true should function properly once the basic system calls assignment
+is completed.
+
+<h3>See Also</h3>
+
+<A HREF=false.html>false</A>
+
+</body>
+</html>

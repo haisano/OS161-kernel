@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>putchar</title>
+<body bgcolor=#ffffff>
+<h2 align=center>putchar</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+putchar - print character to standard output
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;stdio.h&gt;<br>
+<br>
+int<br>
+putchar(int <em>chr</em>);
+
+<h3>Description</h3>
+
+putchar writes its argument to standard output.
+
+<h3>Return Values</h3>
+putchar returns <em>chr</em>. On error, EOF is returned, and
+<A HREF=../syscall/errno.html>errno</A> is set according to the error
+encountered.
+
+<h3>Errors</h3>
+
+Any of the errors from <A HREF=../syscall/write.html>write</A> may
+occur.
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>kitchen</title>
+<body bgcolor=#ffffff>
+<h2 align=center>kitchen</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+kitchen - run some sinks
+
+<h3>Synopsis</h3>
+/testbin/kitchen
+
+<h3>Description</h3>
+
+Runs four copies of <A HREF=sink.html>sink</A>. It may be useful for
+testing concurrent access to the console device. It may also be useful
+for testing job control, if you choose to pursue job control.
+
+<h3>Requirements</h3>
+
+kitchen uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/fork.html>fork</A>
+<li> <A HREF=../syscall/execv.html>execv</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+Additionally, the subprocesses it spawns use the
+<A HREF=../syscall/read.html>read</A> system call.
+<p>
+
+kitchen should function correctly once the basic system calls are
+complete.
+
+<h3>Bugs</h3>
+
+kitchen does not wait for its child processes to exit.
+
+</body>
+</html>

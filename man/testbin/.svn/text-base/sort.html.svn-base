@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>sort</title>
+<body bgcolor=#ffffff>
+<h2 align=center>sort</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+sort - large quicksort-based VM test
+
+<h3>Synopsis</h3>
+/testbin/sort
+
+<h3>Description</h3>
+
+sort creates an array of 147456 random integers and then sorts it
+using quicksort. This will hopefully help show up bugs in the VM
+system.
+
+<h3>Requirements</h3>
+
+sort uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+sort should run correctly to completion once the VM assignment is
+complete.
+
+</body>
+</html>

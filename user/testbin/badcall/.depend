@@ -1,0 +1,598 @@
+
+$(MYBUILDDIR)/bad_execv.o: \
+ bad_execv.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ config.h \
+ test.h
+$(MYBUILDDIR)/bad_waitpid.o: \
+ bad_waitpid.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ config.h \
+ test.h
+$(MYBUILDDIR)/bad_open.o: \
+ bad_open.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/stat.h \
+ $(INSTALLTOP)/include/kern/stat.h \
+ $(INSTALLTOP)/include/kern/stattypes.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ config.h \
+ test.h
+$(MYBUILDDIR)/bad_read.o: \
+ bad_read.c \
+ test.h
+$(MYBUILDDIR)/bad_write.o: \
+ bad_write.c \
+ test.h
+$(MYBUILDDIR)/bad_close.o: \
+ bad_close.c \
+ test.h
+$(MYBUILDDIR)/bad_reboot.o: \
+ bad_reboot.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/stat.h \
+ $(INSTALLTOP)/include/kern/stat.h \
+ $(INSTALLTOP)/include/kern/stattypes.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ config.h \
+ test.h
+$(MYBUILDDIR)/bad_sbrk.o: \
+ bad_sbrk.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/stat.h \
+ $(INSTALLTOP)/include/kern/stat.h \
+ $(INSTALLTOP)/include/kern/stattypes.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ config.h \
+ test.h
+$(MYBUILDDIR)/bad_ioctl.o: \
+ bad_ioctl.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/ioctl.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ config.h \
+ test.h
+$(MYBUILDDIR)/bad_lseek.o: \
+ bad_lseek.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/stat.h \
+ $(INSTALLTOP)/include/kern/stat.h \
+ $(INSTALLTOP)/include/kern/stattypes.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ config.h \
+ test.h
+$(MYBUILDDIR)/bad_fsync.o: \
+ bad_fsync.c \
+ test.h
+$(MYBUILDDIR)/bad_ftruncate.o: \
+ bad_ftruncate.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/stat.h \
+ $(INSTALLTOP)/include/kern/stat.h \
+ $(INSTALLTOP)/include/kern/stattypes.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ config.h \
+ test.h
+$(MYBUILDDIR)/bad_stat.o: \
+ bad_stat.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/stat.h \
+ $(INSTALLTOP)/include/kern/stat.h \
+ $(INSTALLTOP)/include/kern/stattypes.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ config.h \
+ test.h
+$(MYBUILDDIR)/bad_remove.o: \
+ bad_remove.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/stat.h \
+ $(INSTALLTOP)/include/kern/stat.h \
+ $(INSTALLTOP)/include/kern/stattypes.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ config.h \
+ test.h
+$(MYBUILDDIR)/bad_rename.o: \
+ bad_rename.c \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ test.h
+$(MYBUILDDIR)/bad_link.o: \
+ bad_link.c \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ test.h
+$(MYBUILDDIR)/bad_mkdir.o: \
+ bad_mkdir.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/stat.h \
+ $(INSTALLTOP)/include/kern/stat.h \
+ $(INSTALLTOP)/include/kern/stattypes.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ config.h \
+ test.h
+$(MYBUILDDIR)/bad_rmdir.o: \
+ bad_rmdir.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/stat.h \
+ $(INSTALLTOP)/include/kern/stat.h \
+ $(INSTALLTOP)/include/kern/stattypes.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ config.h \
+ test.h
+$(MYBUILDDIR)/bad_chdir.o: \
+ bad_chdir.c \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ test.h
+$(MYBUILDDIR)/bad_getdirentry.o: \
+ bad_getdirentry.c \
+ test.h
+$(MYBUILDDIR)/bad_symlink.o: \
+ bad_symlink.c \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ test.h
+$(MYBUILDDIR)/bad_readlink.o: \
+ bad_readlink.c \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ test.h
+$(MYBUILDDIR)/bad_dup2.o: \
+ bad_dup2.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/stat.h \
+ $(INSTALLTOP)/include/kern/stat.h \
+ $(INSTALLTOP)/include/kern/stattypes.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ config.h \
+ test.h
+$(MYBUILDDIR)/bad_pipe.o: \
+ bad_pipe.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/stat.h \
+ $(INSTALLTOP)/include/kern/stat.h \
+ $(INSTALLTOP)/include/kern/stattypes.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ config.h \
+ test.h
+$(MYBUILDDIR)/bad_time.o: \
+ bad_time.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/stat.h \
+ $(INSTALLTOP)/include/kern/stat.h \
+ $(INSTALLTOP)/include/kern/stattypes.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ config.h \
+ test.h
+$(MYBUILDDIR)/bad_getcwd.o: \
+ bad_getcwd.c \
+ test.h
+$(MYBUILDDIR)/common_buf.o: \
+ common_buf.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/stat.h \
+ $(INSTALLTOP)/include/kern/stat.h \
+ $(INSTALLTOP)/include/kern/stattypes.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ config.h \
+ test.h
+$(MYBUILDDIR)/common_fds.o: \
+ common_fds.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/stat.h \
+ $(INSTALLTOP)/include/kern/stat.h \
+ $(INSTALLTOP)/include/kern/stattypes.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ config.h \
+ test.h
+$(MYBUILDDIR)/common_path.o: \
+ common_path.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/stat.h \
+ $(INSTALLTOP)/include/kern/stat.h \
+ $(INSTALLTOP)/include/kern/stattypes.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ config.h \
+ test.h
+$(MYBUILDDIR)/driver.o: \
+ driver.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/stat.h \
+ $(INSTALLTOP)/include/kern/stat.h \
+ $(INSTALLTOP)/include/kern/stattypes.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/err.h \
+ config.h \
+ test.h
+

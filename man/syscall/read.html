@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>read</title>
+<body bgcolor=#ffffff>
+<h2 align=center>read</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+read - read data from file
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;unistd.h&gt;<br>
+<br>
+int<br>
+read(int <em>fd</em>, void *<em>buf</em>, size_t <em>buflen</em>);
+
+<h3>Description</h3>
+
+read reads up to <em>buflen</em> bytes from the file specified by
+<em>fd</em>, at the location in the file specified by the current
+seek position of the file, and stores them in the space pointed to
+by <em>buf</em>. The file must be open for reading.
+<p>
+
+The current seek position of the file is advanced by the number of
+bytes read.
+<p>
+
+Each read (or <A HREF=write.html>write</A>) operation is atomic
+relative to other I/O to the same file.
+<p>
+
+<h3>Return Values</h3>
+
+The count of bytes read is returned. This count should be
+positive. A return value of 0 should be construed as signifying
+end-of-file. On error, read returns -1 and sets 
+<A HREF=errno.html>errno</A> to a suitable error code for the error 
+condition encountered.
+<p>
+
+Note that in some cases, particularly on devices, fewer than
+<em>buflen</em> (but greater than zero) bytes may be returned. This
+depends on circumstances and does not necessarily signify
+end-of-file.
+<p>
+
+<h3>Errors</h3>
+
+The following error codes should be returned under the conditions
+given. Other error codes may be returned for other errors not
+mentioned here.
+
+<blockquote><table width=90%>
+<td width=10%>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>EBADF</td>	<td><em>fd</em> is not a valid file descriptor, or was
+			not opened for reading.</td></tr>
+<tr><td>EFAULT</td>	<td>Part or all of the address space pointed to by
+			<em>buf</em> is invalid.</td></tr>
+<tr><td>EIO</td>	<td>A hardware I/O error occurred reading the data.</td></tr>
+</table></blockquote>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>null</title>
+<body bgcolor=#ffffff>
+<h2 align=center>null</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+null - null device
+
+<h3>Description</h3>
+
+The null device does nothing. Reads generate immediate EOF; any data
+written is thrown away.
+
+<h3>Files</h3>
+
+<tt>null:</tt>
+
+</body>
+</html>

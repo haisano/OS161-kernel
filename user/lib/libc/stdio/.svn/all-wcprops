@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/lib/libc/stdio
+END
+printf.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/lib/libc/stdio/printf.c
+END
+putchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/lib/libc/stdio/putchar.c
+END
+__puts.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/lib/libc/stdio/__puts.c
+END
+puts.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/lib/libc/stdio/puts.c
+END
+getchar.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/lib/libc/stdio/getchar.c
+END

@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>random</title>
+<body bgcolor=#ffffff>
+<h2 align=center>random</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+random - kernel randomness source
+
+<h3>Synopsis</h3>
+device random0 at lrandom*<br>
+device random0 at pseudorand0<br>
+
+<h3>Description</h3>
+
+The random device is the generalized interface to randomness sources.
+Only one random device is used; if more are attached they are ignored.
+If no random device is found, the kernel may not run.
+<p>
+
+The random device provides both the in-kernel random() function and a
+VFS character device, called <tt>random:</tt>. Bytes read from the
+latter have random values; writes are discarded.
+<p>
+
+<h3>Files</h3>
+<tt>random:</tt>
+
+<h3>See Also</h3>
+<A HREF=lrandom.html>lrandom</A>,
+<A HREF=pseudorand.html>pseudorand</A>
+
+</body>
+</html>

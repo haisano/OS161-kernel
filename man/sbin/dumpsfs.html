@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>dumpsfs</title>
+<body bgcolor=#ffffff>
+<h2 align=center>dumpsfs</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+dumpsfs - dump information about an SFS filesystem
+
+<h3>Synopsis</h3>
+/sbin/dumpsfs <em>raw-device</em>
+<br>
+host-dumpsfs <em>disk-image-file</em>
+
+<h3>Description</h3>
+
+dumpsfs dumps out selected information regarding the contents and
+structure of the SFS filesystem on the device it is passed.
+<p>
+
+Like <A HREF=mksfs.html>mksfs</A>, it is also compiled for the
+System/161 host OS, and in that form can access System/161's disk
+image files.
+
+<h3>Requirements</h3>
+
+dumpsfs uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/open.html>open</A>
+<li> <A HREF=../syscall/read.html>read</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/lseek.html>lseek</A>
+<li> <A HREF=../syscall/fstat.html>fstat</A>
+<li> <A HREF=../syscall/close.html>close</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+dumpsfs should function properly once the file system assignment is
+complete. You may wish to extend it in the course of doing that
+assignment.
+
+</body>
+</html>

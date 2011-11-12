@@ -1,0 +1,101 @@
+10
+
+dir
+150
+https://silo.cs.indiana.edu:5436/svn/knkumar/tags/asst4-end/os161/user/bin
+https://silo.cs.indiana.edu:5436/svn/knkumar
+
+
+
+2011-01-19T01:00:26.991505Z
+6
+knkumar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+16dcf482-280a-40d8-8cd4-2e8997397a18
+
+true
+dir
+
+cp
+dir
+
+mv
+dir
+
+mkdir
+dir
+
+cat
+dir
+
+ln
+dir
+
+false
+dir
+
+pwd
+dir
+
+sh
+dir
+
+sync
+dir
+
+rmdir
+dir
+
+Makefile
+file
+
+
+
+
+2011-05-02T20:45:35.000000Z
+05369b27f86bc0a0792031d43901f148
+2011-01-14T00:22:36.861713Z
+2
+knkumar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+217
+
+ls
+dir
+
+rm
+dir
+

@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>cat</title>
+<body bgcolor=#ffffff>
+<h2 align=center>cat</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+cat - concatenate and print files
+
+<h3>Synopsis</h3>
+/bin/cat <em>files...</em>
+
+<h3>Description</h3>
+
+cat prints the files listed on its command line in order to its
+standard output. If the magic filename "-" is encountered, cat
+prints its standard input up to the first EOF.
+<p>
+
+With no arguments, cat prints its standard input.
+<p>
+
+cat takes no options.
+<p>
+
+<h3>Requirements</h3>
+
+cat uses the following syscalls:
+<ul>
+<li><A HREF=../syscall/open.html>open</A>
+<li><A HREF=../syscall/read.html>read</A>
+<li><A HREF=../syscall/write.html>write</A>
+<li><A HREF=../syscall/close.html>close</A>
+<li><A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+cat should function properly once the basic system calls assignment is
+completed.
+
+</body>
+</html>

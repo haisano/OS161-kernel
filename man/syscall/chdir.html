@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>chdir</title>
+<body bgcolor=#ffffff>
+<h2 align=center>chdir</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+chdir - change current directory
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;unistd.h&gt;<br>
+<br>
+int<br>
+chdir(const char *<em>pathname</em>);
+
+<h3>Description</h3>
+
+The current directory of the current process is set to the directory
+named by <em>pathname</em>.
+<p>
+
+<h3>Return Values</h3>
+On success, chdir returns 0. On error, -1 is returned, and
+<A HREF=errno.html>errno</A> is set according to the error
+encountered.
+
+<h3>Errors</h3>
+
+The following error codes should be returned under the conditions
+given. Other error codes may be returned for other errors not
+mentioned here.
+
+<blockquote><table width=90%>
+<tr><td width=10%>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>ENODEV</td>		<td>The device prefix of <em>pathname</em> did
+				not exist.</td></tr>
+<tr><td>ENOTDIR</td>	<td>A non-final component of <em>pathname</em>
+				was not a directory.</td></tr>
+<tr><td>ENOTDIR</td>	<td><em>pathname</em> did not refer to a
+				directory.</td> 
+<tr><td>ENOENT</td>	<td><em>pathname</em> did not exist.</td></tr>
+<tr><td>EIO</td>	<td>A hard I/O error occurred.</td></tr>
+<tr><td>EFAULT</td>	<td><em>pathname</em> was an invalid pointer.</td></tr>
+</table></blockquote>
+
+</body>
+</html>

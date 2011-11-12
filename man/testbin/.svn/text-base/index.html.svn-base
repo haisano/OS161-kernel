@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>OS/161 Test binaries</title>
+</head>
+<body bgcolor=#ffffff>
+
+<h2 align=center>OS/161 Test binaries (/testbin)</h2>
+
+<p align=center>
+<A HREF=..>Top</A> |
+<A HREF=../bin>Binaries</A> |
+<A HREF=../sbin>Sysadmin binaries</A> |
+<A HREF=../syscall>System calls</A> |
+<A HREF=../libc>C standard library</A> |
+<A HREF=../dev>Device drivers</A> |
+<A HREF=../misc>Miscellaneous</A>
+</p>
+<br>
+
+<ul>
+<li> <A HREF=add.html>add</A> - add two numbers
+<li> <A HREF=argtest.html>argtest</A> - display arguments passed through execv
+<li> <A HREF=badcall.html>badcall</A> - make invalid system calls
+<li> <A HREF=bigfile.html>bigfile</A> - create a large file in small chunks
+<li> <A HREF=conman.html>conman</A> - echo typed characters
+<li> <A HREF=crash.html>crash</A> - commit various exceptions
+<li> <A HREF=ctest.html>ctest</A> - cyclic stride-oriented VM test
+<li> <A HREF=dirseek.html>dirseek</A> - seek on directories test
+<li> <A HREF=dirtest.html>dirtest</A> - simple subdirectories test
+<li> <A HREF=f_test.html>f_test</A> - basic concurrent filesystem test
+<li> <A HREF=farm.html>farm</A> - run some hogs and cats
+<li> <A HREF=faulter.html>faulter</A> - commit address fault
+<li> <A HREF=filetest.html>filetest</A> - basic filesystem test
+<li> <A HREF=forkbomb.html>forkbomb</A> - create hundreds of processes
+<li> <A HREF=forktest.html>forktest</A> - test fork system call
+<li> <A HREF=guzzle.html>guzzle</A> - waste cpu
+<li> <A HREF=hash.html>hash</A> - compute a simple hash function of a file
+<li> <A HREF=hog.html>hog</A> - waste cpu
+<li> <A HREF=huge.html>huge</A> - very large VM test
+<li> <A HREF=kitchen.html>kitchen</A> - run some sinks
+<li> <A HREF=malloctest.html>malloctest</A> - some simple tests for 
+   userlevel malloc
+<li> <A HREF=matmult.html>matmult</A> - baseline VM stress test
+<li> <A HREF=palin.html>palin</A> - simple VM test
+<li> <A HREF=randcall.html>randcall</A> - make randomized system calls
+<li> <A HREF=rmdirtest.html>rmdirtest</A> - test removing in-use directories
+<li> <A HREF=rmtest.html>rmtest</A> - test removing open files
+<li> <A HREF=sink.html>sink</A> - accept and throw away console input
+<li> <A HREF=sort.html>sort</A> - large quicksort-based VM test
+<li> <A HREF=sty.html>sty</A> - run some hogs
+<li> <A HREF=tail.html>tail</A> - print part of a file
+<li> <A HREF=tictac.html>tictac</A> - tic-tac-toe game
+<li> <A HREF=triplehuge.html>triplehuge</A> - very very large VM test
+<li> <A HREF=triplemat.html>triplemat</A> - very large VM test
+<li> <A HREF=userthreads.html>userthreads</A> - simple user-level threads test
+</ul>
+
+</body>
+</html>

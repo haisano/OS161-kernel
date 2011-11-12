@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>filetest</title>
+<body bgcolor=#ffffff>
+<h2 align=center>filetest</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+filetest - basic filesystem test
+
+<h3>Synopsis</h3>
+/testbin/filetest <em>filename</em>
+
+<h3>Description</h3>
+
+filetest tests the filesystem by opening, writing to, and reading from
+a user-specified file.
+
+<h3>Requirements</h3>
+
+filetest uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/open.html>open</A>
+<li> <A HREF=../syscall/read.html>read</A>
+<li> <A HREF=../syscall/close.html>close</A>
+<li> <A HREF=../syscall/remove.html>remove</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+filetest should run correctly on SFS filesystems with the OS/161
+system as shipped. It should continue to work once the file system
+assignment is complete.
+<p>
+
+It will not work in full on emufs, because emufs does not support
+remove(). 
+
+</body>
+</html>

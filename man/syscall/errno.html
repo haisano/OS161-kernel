@@ -1,0 +1,339 @@
+<html>
+<head>
+<title>errno</title>
+<body bgcolor=#ffffff>
+<h2 align=center>errno</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+errno - error code reporting
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;errno.h&gt;<br>
+<br>
+extern int errno;
+
+<h3>Description</h3>
+
+When system calls, and sometimes other functions, fail, a code
+representing or describing the error condition is placed in the global
+variable errno.
+<p>
+
+errno is always left unchanged by successful operations.
+<p>
+
+errno may be a macro. In a multithreaded process it is almost
+invariably a macro. However, it is always an lvalue, that is, it may
+be assigned to.
+<p>
+
+Each numeric code has a symbolic name and a textual expansion. The
+symbolic names are used in source code; the textual expansions are
+printed out when errors are reported to a user.
+<p>
+
+The textual expansions can be retrieved with 
+<A HREF=../libc/strerror.html>strerror</A> or printed with 
+<A HREF=../libc/err.html>err</A> or <A HREF=../libc/warn.html>warn</A>. 
+<p>
+
+<h3>Symbolic names</h3>
+
+The following symbolic errors are defined in the OS/161 base system.
+You may add more at your pleasure; but be sure to read the notes in 
+the file kern/errno.h that defines them.
+
+<blockquote>
+<table width=90%>
+<td width=10%>&nbsp;</td><td>&nbsp;</td></tr>
+
+<tr><td valign=top>ENOSYS</td>
+<td>No such system call: the call made was not defined, or perhaps not
+	yet implemented.</td></tr>
+
+<tr><td valign=top>EUNIMP</td>
+<td>Unimplemented feature: functionality not yet implemented would
+	have been needed to perform the requested operation. This
+	error code is not found in production systems.</td></tr>
+
+<tr><td valign=top>ENOMEM</td>
+<td>Out of memory: a memory allocation failed. This normally means
+	that a process has used up all the memory available to it
+	(either because of limits or because it has used up all the
+	memory available to the system.) It may also mean that memory
+	allocation within the kernel has failed.</td></tr>
+
+<tr><td valign=top>EAGAIN</td>
+<td>Operation would block: some resource is temporarily unavailable,
+	or a non-blocking I/O operation (if such things exist) could
+	not be completed without waiting. Historically, the message
+	was "Try again later"; in 4.4BSD EAGAIN and the old
+	EWOULDBLOCK code were folded together.</td></tr>
+
+<tr><td valign=top>EINTR</td>
+<td>Interrupted system call: handling of a system call was interrupted
+	by the delivery of a signal. (If you have signals.)</td></tr>
+
+<tr><td valign=top>EFAULT</td>
+<td>Bad memory reference: a pointer passed as an argument was not
+	valid.</td></tr>
+
+<tr><td valign=top>ENAMETOOLONG</td>
+<td>String too long: a string passed as an argument was too long to
+	process.</td></tr>
+
+<tr><td valign=top>EINVAL</td>
+<td>Invalid argument: an argument passed to a command or system call
+	was badly formed, invalid, or nonsensical, in a way for which
+	some more specific error code is not available.</td></tr>
+
+<tr><td valign=top>EPERM</td>
+<td>Operation not permitted: the requested operation is restricted to
+	privileged users.</td></tr>
+
+<tr><td valign=top>EACCES</td>
+<td>Permission denied: the current process's credentials do not allow
+	the desired form of access to the target object according to
+	its permission settings.</td></tr>
+
+<tr><td valign=top>EMPROC</td>
+<td>Too many processes: the current user ID has reached its limit of
+	simultaneous running processes. In Unix, tihs is
+	EPROCLIM.</td></tr>
+
+<tr><td valign=top>ENPROC</td>
+<td>Too many processes on system: the system process table is full.
+	(Void where impossible or prohibited by law.)</td></tr>
+
+<tr><td valign=top>ENOEXEC</td>
+<td>File is not executable: an <A HREF=../syscall/execv.html>execv</A>
+	operation was attempted but the kernel was unable to run the
+	requested program.</td></tr>
+
+<tr><td valign=top>E2BIG</td>
+<td>Argument list too long: the space taken up by the argv[] strings
+	passed to a newly started program is larger than the system
+	allows.</td></tr>
+
+<tr><td valign=top>ESRCH</td>
+<td>No such process: the supplied process ID does not name any of the
+	currently running processes.</td></tr>
+
+<tr><td valign=top>ECHILD</td>
+<td>No child processes: the current process has no exited child
+	processes whose exit status has not yet been collected with
+	<A HREF=../syscall/waitpid.html>waitpid</A>.</td></tr>
+
+<tr><td valign=top>ENOTDIR</td>
+<td>Not a directory: a directory was expected and a non-directory
+	filesystem object was found.</td></tr>
+
+<tr><td valign=top>EISDIR</td>
+<td>Is a directory: a non-directory was expected and a directory was
+	found.</td></tr>
+
+<tr><td valign=top>ENOENT</td>
+<td>No such file or directory: the requested filesystem object
+	does/did not exist.</td></tr>
+
+<tr><td valign=top>ELOOP</td>
+<td>Too many levels of symbolic links: pathname lookup crossed more
+	than the maximum allowed number of symbolic links. Usually
+	means a link points to itself, or a family of links has been
+	arranged into a loop. (If you have symbolic links.)</td></tr>
+
+<tr><td valign=top>ENOTEMPTY</td>
+<td>Directory not empty: a directory must be empty of everything
+	(except . and ..) before it may be removed.</td></tr>
+
+<tr><td valign=top>EEXIST</td>
+<td>File exists: a filesystem object that was expected not to exist
+	did in fact already exist.</td></tr>
+
+<tr><td valign=top>EMLINK</td>
+<td>Too many hard links: the maximum number of hard links to the
+	target file already exist.</td></tr>
+
+<tr><td valign=top>EXDEV</td>
+<td>Cross-device link: an attempt was made to instruct one filesystem
+	to handle files on another filesystem.</td></tr>
+
+<tr><td valign=top>ENODEV</td>
+<td>No such device: the requested device does not exist.</td></tr>
+
+<tr><td valign=top>ENXIO</td>
+<td>Device not available: the requested device exists but is not
+	available (is not mounted, is powered off, etc.)</td></tr>
+
+<tr><td valign=top>EBUSY</td>
+<td>Device busy: the requested object cannot be used (or, perhaps,
+	released) because something else is using it.</td></tr>
+
+<tr><td valign=top>EMFILE</td>
+<td>Too many open files: the process file table is full, so the
+	process cannot open more files.</td></tr>
+
+<tr><td valign=top>ENFILE</td>
+<td>Too many open files in system: a system-wide limit of some sort,
+	if any exists, on the number of open files has been
+	reached.</td></tr>
+
+<tr><td valign=top>EBADF</td>
+<td>Bad file number: a file operation was requested on an illegal file
+	handle, or a file handle that was not open. Or, a write
+	operation was attempted on a file handle that was open only
+	for read or vice-versa.</td></tr>
+
+<tr><td valign=top>EIOCTL</td>
+<td>Invalid or inappropriate ioctl: an operation requested via the 
+	<A HREF=../syscall/ioctl.html>ioctl</A> system call was not
+	defined or could not be performed on the indicated
+	object. In Unix, for historical reasons, this is ENOTTY, with
+	the historic message "Not a typewriter".</td></tr>
+
+<tr><td valign=top>EIO</td>
+<td>Input/output error: a hardware error occured on a device. Media
+	errors on disks fall into this category.</td></tr>
+
+<tr><td valign=top>ESPIPE</td>
+<td>Illegal seek: a seek operation was attempted on a sequential
+	object where seeking makes no sense, like a
+	terminal.</td></tr>
+
+<tr><td valign=top>EROFS</td>
+<td>Read-only file system: an attempt was made to modify a filesystem
+	that was mounted read-only. (If you have read-only
+	mounts.)</td></tr>
+
+<tr><td valign=top>ENOSPC</td>
+<td>No space left on device: the target filesystem is full.</td></tr>
+
+<tr><td valign=top>EDQUOT</td>
+<td>Disc<font size=-2><i>(sic)</i></font> quota exceeded: the current user ID's quota (of space or
+	number of files) on the target filesystem has been used up.
+	(If you have disk quotas.)</td></tr>
+
+<tr><td valign=top>EFBIG</td>
+<td>File too large: an attempt was made to exceed the target
+	filesystem's maximum file size, or a per-user limit on maximum
+	file size was reached, if such a thing exists.</td></tr>
+
+<tr><td valign=top>EFTYPE</td>
+<td>Invalid file type or format: the file provided was the wrong kind
+	of file or contained invalid syntax.</td></tr>
+
+<tr><td valign=top>EDOM</td>
+<td>Argument out of range: the (numeric) argument provided was outside
+	the values upon which the operation is defined. For example,
+	attempting to evaluate the logarithm of zero.</td></tr>
+
+<tr><td valign=top>ERANGE</td>
+<td>Result out of range: the result of an operation did not fit in the
+	space provided or could not be represented.</td></tr>
+
+<tr><td valign=top>EILSEQ</td>
+<td>Invalid multibyte character sequence: the input string contained a
+	byte sequence whose value is undefined or whose use is
+	restricted. Only applicable when a multibyte character set is
+	in use, and if someone has added locale support.</td></tr>
+
+<tr><td valign=top>ENOTSOCK</td>
+<td>Not a socket: the file handle in question does not refer to a
+	socket, but a socket was expected.</td></tr>
+
+<tr><td valign=top>EISSOCK</td>
+<td>Is a socket: the file handle in question refers to a socket, but a
+	socket was not expected. In Unix this is EOPNOTSUPP,
+	"Operation not supported on socket".</td></tr>
+
+<tr><td valign=top>ENOTCONN</td>
+<td>Socket is not connected: given the protocol in use, the operation
+	requires a connected socket, but no connection has yet been
+	made.</td></tr>
+
+<tr><td valign=top>ESHUTDOWN</td>
+<td>Socket has been shut down: the operation requires a running
+	socket, but the socket provided has been closed down.</td></tr>
+
+<tr><td valign=top>EPFNOSUPPORT</td>
+<td>Protocol family not supported: the requested protocol family
+	(PF_INET, PF_LOCAL, etc.) is not supported by the system.</td></tr>
+
+<tr><td valign=top>ESOCKTNOSUPPORT</td>
+<td>Socket type not supported: the requested socket type (SOCK_STREAM,
+	SOCK_DGRAM, etc.) is not supported by the system.</td></tr>
+
+<tr><td valign=top>EPROTONOSUPPORT</td>
+<td>Protocol not supported: the protocol requested for a socket was
+	not one supported by the system.</td></tr>
+
+<tr><td valign=top>EAFNOSUPPORT</td>
+<td>Address family not supported by protocol family: the address
+	family named in a struct sockaddr (AF_INET, AF_LOCAL, etc.) is
+	not supported by the protocol family used to create the socket
+	(PF_INET, PF_LOCAL, etc.). In practice each protocol family
+	has exactly one address family and the values of AF_* and PF_*
+	are often, if incorrectly, used interchangeably.</td></tr>
+
+<tr><td valign=top>ENOPROTOOPT</td>
+<td>Protocol option not available: the protocol option that was
+	requested is not supported or cannot be activated.</td></tr>
+
+<tr><td valign=top>EADDRINUSE</td>
+<td>Address already in use: the requested socket address is already in
+	use by another socket somewhere on the system.</td></tr>
+
+<tr><td valign=top>EADDRNOTAVAIL</td>
+<td>Cannot assign requested address: the requested socket address is
+	unavailable. Usually caused by attempting to bind a socket to
+	the IP address of another machine. </td></tr>
+
+<tr><td valign=top>ENETDOWN</td>
+<td>Network is down: the network or subnet needed is offline.</td></tr>
+
+<tr><td valign=top>ENETUNREACH</td>
+<td>Network is unreachable: the network or subnet needed cannot be
+	reached from here, possibly due to routing problems on the
+	network, possibly due to local configuration trouble.</td></tr>
+
+<tr><td valign=top>EHOSTDOWN</td>
+<td>Host is down: the specific machine requested is offline.</td></tr>
+
+<tr><td valign=top>EHOSTUNREACH</td>
+<td>Host is unreachable: the specific machine requested cannot be
+	reached from here.</td></tr>
+
+<tr><td valign=top>ECONNREFUSED</td>
+<td>Connection refused: the remote machine is not listening for
+	connections on the requested port.</td></tr>
+
+<tr><td valign=top>ETIMEDOUT</td>
+<td>Connection timed out: there was no response from the remote
+machine; it may be down, it may not be listening, or it may not be
+	receiving our packets at all.</td></tr>
+
+<tr><td valign=top>ECONNRESET</td>
+<td>Connection reset by peer: the connection was abandoned by the
+	remote host. Usually seen on already-open connections after
+	the remote machine reboots and thereby loses its network
+	state. Sometimes also caused by defective network devices
+	between the local and remote hosts.</td></tr>
+
+<tr><td valign=top>EMSGSIZE</td>
+<td>Message too large: an internal protocol length limit was
+	exceeded.</td></tr>
+
+<tr><td valign=top>ENOTSUP</td>
+<td>Threads operation not supported: a special error code defined by
+	the POSIX threads standard, which is a "special"
+	interface.</td></tr>
+
+</table>
+</blockquote>
+
+</body>
+</html>

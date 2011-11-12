@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>rmdir</title>
+<body bgcolor=#ffffff>
+<h2 align=center>rmdir</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+rmdir - remove directory
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;unistd.h&gt;<br>
+<br>
+int<br>
+rmdir(const char *<em>pathname</em>);
+
+<h3>Description</h3>
+
+rmdir removes the directory named by <em>pathname</em>. The directory
+(and all the components in its path prefix) must exist. The directory
+must be empty, except for "." and "..", and may not be the root
+directory of the filesystem.
+<p>
+
+It is invalid to attempt to remove the "." or ".." entries in a
+directory. What rmdir actually removes is a name in some (other)
+directory; removing the "." or ".." <strong>names</strong> would make
+a mess. It is not invalid for a process to remove its own current
+directory, but it does not work to do so by calling rmdir(".").
+<p>
+
+It is impossible in any event to remove a directory named with "..",
+because it is impossible to name a directory with ".." unless it is
+not empty.
+<p>
+
+You must decide what happens if an attempt is made to remove a
+directory that is presently in use (e.g., is being read by ls, or is
+some process's current directory, etc.)
+<p>
+
+The removal must be atomic.
+<p>
+
+<h3>Return Values</h3>
+On success, rmdir returns 0. On error, -1 is returned, and
+<A HREF=errno.html>errno</A> is set according to the error
+encountered.
+
+<h3>Errors</h3>
+
+The following error codes should be returned under the conditions
+given. Other error codes may be returned for other errors not
+mentioned here.
+
+<blockquote><table width=90%>
+<td width=10%>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>ENODEV</td>	<td>The device prefix of <em>filename</em> did
+				not exist.</td></tr>
+<tr><td>ENOTDIR</td>	<td>A non-final component of <em>pathname</em>
+				was not a directory.</td></tr>
+<tr><td>ENOTDIR</td>	<td><em>pathname</em> referred to an object that
+				was not a directory.</td></tr>
+<tr><td>ENOENT</td>	<td>The target directory did not exist.</td></tr>
+<tr><td>EINVAL</td>	<td>An attempt was made to remove "."</td></tr>
+<tr><td>ENOTEMPTY</td>	<td>The target directory was not empty.</td></tr>
+<tr><td>EIO</td>	<td>A hard I/O error occurred.</td></tr>
+<tr><td>EFAULT</td>	<td><em>pathname</em> was an invalid pointer.</td></tr>
+</table></blockquote>
+
+Attempts to remove ".." may generate either EINVAL or ENOTEMPTY.
+
+</body>
+</html>

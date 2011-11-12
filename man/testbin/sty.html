@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>sty</title>
+<body bgcolor=#ffffff>
+<h2 align=center>sty</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+sty - run some hogs
+
+<h3>Synopsis</h3>
+/testbin/sty
+
+<h3>Description</h3>
+
+sty runs six copies of <A HREF=hog.html>hog</A>.
+
+<h3>Requirements</h3>
+
+sty uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/fork.html>fork</A>
+<li> <A HREF=../syscall/execv.html>execv</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+sty is only likely to be useful for testing the scheduler.
+
+<h3>Bugs</h3>
+
+sty does not wait for its child processes to finish.
+
+</body>
+</html>

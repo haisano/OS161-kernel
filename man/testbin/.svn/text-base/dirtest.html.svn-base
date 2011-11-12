@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>dirtest</title>
+<body bgcolor=#ffffff>
+<h2 align=center>dirtest</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+dirtest - simple subdirectories test
+
+<h3>Synopsis</h3>
+/testbin/dirtest
+
+<h3>Description</h3>
+
+dirtest creates and then removes a series of nested directories.
+
+<h3>Requirements</h3>
+
+dirtest uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/mkdir.html>mkdir</A>
+<li> <A HREF=../syscall/rmdir.html>rmdir</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+dirtest should run (on SFS filesystems) when the file system
+assignment is complete. It will not run on emufs, because emufs does
+not support rmdir.
+
+</body>
+</html>

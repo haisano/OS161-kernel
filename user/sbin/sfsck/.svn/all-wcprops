@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/sbin/sfsck
+END
+build
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/sbin/sfsck/build
+END
+sfsck.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/sbin/sfsck/sfsck.c
+END
+.depend
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/sbin/sfsck/.depend
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/sbin/sfsck/Makefile
+END

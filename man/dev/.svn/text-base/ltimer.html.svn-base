@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>ltimer</title>
+<body bgcolor=#ffffff>
+<h2 align=center>ltimer</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+ltimer - LAMEbus timer device
+
+<h3>Synopsis</h3>
+ltimer* at lamebus*
+
+<h3>Description</h3>
+
+ltimer is a driver for the CS161 LAMEbus clock/timer card. The
+card can also provide beep services to the kernel.
+<p>
+
+The <A HREF=beep.html>beep</A> and <A HREF=rtclock.html>rtclock</A>
+generic devices can be attached to an ltimer instance.
+
+<h3>See Also</h3>
+<A HREF=lamebus.html>lamebus</A>
+
+</body>
+</html>

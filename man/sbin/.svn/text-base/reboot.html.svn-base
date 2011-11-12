@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>reboot</title>
+<body bgcolor=#ffffff>
+<h2 align=center>reboot</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+reboot - reboot system
+
+<h3>Synopsis</h3>
+/sbin/reboot
+
+<h3>Description</h3>
+
+reboot shuts the system down and then attempts to restart it. On
+platforms where reboot is not possible, it behaves the same way 
+as <A HREF=halt.html>halt</A>.
+
+<h3>Requirements</h3>
+
+reboot uses the <A HREF=../syscall/reboot.html>reboot</A> system call.
+<p>
+
+reboot will function properly even before you do any work on OS/161.
+
+<h3>See Also</h3>
+
+<A HREF=../bin/sync.html>/bin/sync</A><br>
+<A HREF=halt.html>halt</A>, <A HREF=poweroff.html>poweroff</A>
+
+</body>
+</html>

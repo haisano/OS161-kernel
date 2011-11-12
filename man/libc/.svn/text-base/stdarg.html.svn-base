@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>stdarg</title>
+<body bgcolor=#ffffff>
+<h2 align=center>stdarg</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+stdarg - handle functions with variable arguments
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;stdarg.h&gt;<br>
+<br>
+va_start(va_list <em>ap</em>, <em>start-argument</em>);<br>
+<br>
+va_end(va_list <em>ap</em>);<br>
+<br>
+<em>type</em><br>
+va_arg(va_list <em>ap</em>, <em>type</em>);<br>
+<br>
+va_copy(va_list <em>dest</em>, va_list <em>src</em>);<br>
+
+<h3>Description</h3>
+
+Functions where the number of arguments is not fixed at compile time
+can be written using the stdarg facility. This provides a type,
+va_list, and the macros listed above, which allow iterating through
+the arguments.
+<p>
+
+va_start initializes a va_list <em>ap</em> to point to the current
+function's arguments. The <em>start-argument</em> argument should be
+the name of the last fixed parameter in the calling sequence.
+<p>
+
+va_end cleans up a va_list once it is no longer needed. While failure
+to use va_end may have no effect on some architectures (in fact, in
+some cases va_end does nothing at all) on other architectures it may
+be fatal.
+<p>
+
+va_arg retrieves the next argument, which is presumed to be of type
+<em>type</em>. The function must have some way to determine what types
+to expect, and how many arguments, as this information cannot be
+extracted from the argument list itself. To rewind, use va_end and
+then va_start again. 
+<p>
+
+Remember that default C argument promotions occur when passing the
+variable arguments. There is no run-time checking of any kind, and
+little to no compile-time checking: if you retrieve a type different
+from that which was passed using va_arg, you will silently get garbage
+for that and all subsequent arguments.
+<p>
+
+va_copy assigns a copy of <em>src</em> to <em>dest</em>. Subsequent
+operations on either will not affect the other.
+<p>
+
+<h3>Restrictions</h3>
+
+Because the va_list is not necessarily a simple type, but may involve
+pointers to state maintained elsewhere, it is not necessarily a simple
+value. Thus, assigning va_lists to each other with `=', memcpy, or the
+like, or passing them to functions, may not give multiple independent
+objects. When in doubt, use va_copy, or invoke va_start multiple
+times.
+<p>
+
+<h3>Return Values</h3>
+
+va_start, va_end, and va_copy do not return anything. va_arg returns
+the value of the requested argument.
+
+</body>
+</html>

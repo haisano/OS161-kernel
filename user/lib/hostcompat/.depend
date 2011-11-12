@@ -1,0 +1,11 @@
+
+$(MYBUILDDIR)/err.ho: \
+ err.c \
+ host-err.h
+$(MYBUILDDIR)/time.ho: \
+ time.c \
+ hostcompat.h
+$(MYBUILDDIR)/hostcompat.ho: \
+ hostcompat.c \
+ hostcompat.h
+

@@ -1,0 +1,596 @@
+
+$(MYBUILDDIR)/__printf.o: \
+ ../../../common/libc/printf/__printf.c \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/assert.h \
+ $(INSTALLTOP)/include/stdint.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/stdarg.h
+$(MYBUILDDIR)/snprintf.o: \
+ ../../../common/libc/printf/snprintf.c \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/stdarg.h
+$(MYBUILDDIR)/__puts.o: \
+ stdio/__puts.c \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h
+$(MYBUILDDIR)/getchar.o: \
+ stdio/getchar.c \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h
+$(MYBUILDDIR)/printf.o: \
+ stdio/printf.c \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/stdarg.h
+$(MYBUILDDIR)/putchar.o: \
+ stdio/putchar.c \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h
+$(MYBUILDDIR)/puts.o: \
+ stdio/puts.c \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h
+$(MYBUILDDIR)/abort.o: \
+ stdlib/abort.c \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h
+$(MYBUILDDIR)/atoi.o: \
+ ../../../common/libc/stdlib/atoi.c \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/string.h
+$(MYBUILDDIR)/exit.o: \
+ stdlib/exit.c \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h
+$(MYBUILDDIR)/malloc.o: \
+ stdlib/malloc.c \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/err.h \
+ $(INSTALLTOP)/include/stdint.h
+$(MYBUILDDIR)/random.o: \
+ stdlib/random.c \
+ $(INSTALLTOP)/include/assert.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h
+$(MYBUILDDIR)/system.o: \
+ stdlib/system.c \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/string.h
+$(MYBUILDDIR)/bzero.o: \
+ ../../../common/libc/string/bzero.c \
+ $(INSTALLTOP)/include/stdint.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h
+$(MYBUILDDIR)/memcmp.o: \
+ string/memcmp.c \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h
+$(MYBUILDDIR)/memcpy.o: \
+ ../../../common/libc/string/memcpy.c \
+ $(INSTALLTOP)/include/stdint.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h
+$(MYBUILDDIR)/memmove.o: \
+ ../../../common/libc/string/memmove.c \
+ $(INSTALLTOP)/include/stdint.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h
+$(MYBUILDDIR)/memset.o: \
+ string/memset.c \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h
+$(MYBUILDDIR)/strcat.o: \
+ ../../../common/libc/string/strcat.c \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h
+$(MYBUILDDIR)/strchr.o: \
+ ../../../common/libc/string/strchr.c \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h
+$(MYBUILDDIR)/strcmp.o: \
+ ../../../common/libc/string/strcmp.c \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h
+$(MYBUILDDIR)/strcpy.o: \
+ ../../../common/libc/string/strcpy.c \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h
+$(MYBUILDDIR)/strerror.o: \
+ string/strerror.c \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/kern/errmsg.h
+$(MYBUILDDIR)/strlen.o: \
+ ../../../common/libc/string/strlen.c \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h
+$(MYBUILDDIR)/strrchr.o: \
+ ../../../common/libc/string/strrchr.c \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h
+$(MYBUILDDIR)/strtok.o: \
+ string/strtok.c \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h
+$(MYBUILDDIR)/strtok_r.o: \
+ ../../../common/libc/string/strtok_r.c \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h
+$(MYBUILDDIR)/time.o: \
+ time/time.c \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h
+$(MYBUILDDIR)/syscalls.o: \
+ ../../../build/user/lib/libc/syscalls.S \
+ $(INSTALLTOP)/include/kern/syscall.h \
+ $(INSTALLTOP)/include/machine/regdefs.h
+$(MYBUILDDIR)/adddi3.o: \
+ ../../../common/gcc-millicode/adddi3.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/anddi3.o: \
+ ../../../common/gcc-millicode/anddi3.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/ashldi3.o: \
+ ../../../common/gcc-millicode/ashldi3.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/ashrdi3.o: \
+ ../../../common/gcc-millicode/ashrdi3.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/cmpdi2.o: \
+ ../../../common/gcc-millicode/cmpdi2.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/divdi3.o: \
+ ../../../common/gcc-millicode/divdi3.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/iordi3.o: \
+ ../../../common/gcc-millicode/iordi3.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/lshldi3.o: \
+ ../../../common/gcc-millicode/lshldi3.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/lshrdi3.o: \
+ ../../../common/gcc-millicode/lshrdi3.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/moddi3.o: \
+ ../../../common/gcc-millicode/moddi3.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/muldi3.o: \
+ ../../../common/gcc-millicode/muldi3.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/negdi2.o: \
+ ../../../common/gcc-millicode/negdi2.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/notdi2.o: \
+ ../../../common/gcc-millicode/notdi2.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/qdivrem.o: \
+ ../../../common/gcc-millicode/qdivrem.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/subdi3.o: \
+ ../../../common/gcc-millicode/subdi3.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/ucmpdi2.o: \
+ ../../../common/gcc-millicode/ucmpdi2.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/udivdi3.o: \
+ ../../../common/gcc-millicode/udivdi3.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/umoddi3.o: \
+ ../../../common/gcc-millicode/umoddi3.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/xordi3.o: \
+ ../../../common/gcc-millicode/xordi3.c \
+ ../../../common/gcc-millicode/longlong.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/sys/endian.h \
+ $(INSTALLTOP)/include/kern/endian.h \
+ $(INSTALLTOP)/include/kern/machine/endian.h \
+ $(INSTALLTOP)/include/limits.h \
+ $(INSTALLTOP)/include/kern/limits.h
+$(MYBUILDDIR)/__assert.o: \
+ unix/__assert.c \
+ $(INSTALLTOP)/include/assert.h \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/string.h
+$(MYBUILDDIR)/err.o: \
+ unix/err.c \
+ $(INSTALLTOP)/include/stdio.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/stdarg.h \
+ $(INSTALLTOP)/include/stdlib.h \
+ $(INSTALLTOP)/include/string.h \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/err.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h
+$(MYBUILDDIR)/errno.o: \
+ unix/errno.c \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h
+$(MYBUILDDIR)/getcwd.o: \
+ unix/getcwd.c \
+ $(INSTALLTOP)/include/unistd.h \
+ $(INSTALLTOP)/include/sys/types.h \
+ $(INSTALLTOP)/include/kern/types.h \
+ $(INSTALLTOP)/include/kern/machine/types.h \
+ $(INSTALLTOP)/include/types/size_t.h \
+ $(INSTALLTOP)/include/sys/null.h \
+ $(INSTALLTOP)/include/kern/fcntl.h \
+ $(INSTALLTOP)/include/kern/ioctl.h \
+ $(INSTALLTOP)/include/kern/reboot.h \
+ $(INSTALLTOP)/include/kern/seek.h \
+ $(INSTALLTOP)/include/kern/time.h \
+ $(INSTALLTOP)/include/kern/unistd.h \
+ $(INSTALLTOP)/include/kern/wait.h \
+ $(INSTALLTOP)/include/errno.h \
+ $(INSTALLTOP)/include/kern/errno.h
+$(MYBUILDDIR)/setjmp.o: \
+ ../../../common/libc/arch/mips/setjmp.S \
+ $(INSTALLTOP)/include/kern/mips/regdefs.h
+

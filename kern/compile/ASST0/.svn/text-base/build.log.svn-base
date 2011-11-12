@@ -1,0 +1,5 @@
+mips-harvard-os161-gcc -g -Wall -W -Wwrite-strings -Wmissing-prototypes -Werror -std=gnu99 -mno-abicalls -fno-pic -ffixed-23 -nostdinc -I../../include -I../../dev -I. -Iincludelinks -ffreestanding -D_KERNEL -c ../../startup/hello.c
+
+
+Stop.
+bmake: stopped in /u/knkumar/cs161/src/kern/compile/ASST0

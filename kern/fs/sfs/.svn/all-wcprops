@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/fs/sfs
+END
+sfs_io.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/fs/sfs/sfs_io.c
+END
+sfs_fs.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/fs/sfs/sfs_fs.c
+END
+sfs_vnode.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/fs/sfs/sfs_vnode.c
+END

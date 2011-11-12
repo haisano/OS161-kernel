@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>mksfs</title>
+<body bgcolor=#ffffff>
+<h2 align=center>mksfs</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+mksfs - create an SFS filesystem
+
+<h3>Synopsis</h3>
+/sbin/mksfs <em>raw-device</em> <em>volname</em>
+<br>
+host-mksfs <em>disk-image-file</em> <em>volname</em>
+
+<h3>Description</h3>
+
+mksfs creates a new SFS filesystem on the specified device or disk
+image. The volume name is set to <em>volname</em>.
+<p>
+
+If mksfs is used under OS/161, the first form should be used, where
+<em>raw-device</em> is a raw device name (such as "lhd1raw:"). Don't
+use a device that's already mounted (or being used for swap).
+<p>
+
+mksfs can also be used on the System/161 host OS, in which case the
+second form should be used. The host-compiled version of mksfs knows
+how to deal with the header on System/161 disk images and does the
+right thing.
+<p>
+
+Note that as of this writing host-mksfs cannot create disk image
+files. This is a bug and will hopefully be addressed eventually.
+
+<h3>Requirements</h3>
+
+mksfs uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/open.html>open</A>
+<li> <A HREF=../syscall/read.html>read</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/lseek.html>lseek</A>
+<li> <A HREF=../syscall/fstat.html>fstat</A>
+<li> <A HREF=../syscall/close.html>close</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+mksfs should function properly once the file system assignment is
+complete. You will likely need to make some changes to it in the
+course of doing that assignment.
+
+<h3>See Also</h3>
+
+<A HREF=dumpsfs.html>dumpsfs</A>
+
+</body>
+</html>

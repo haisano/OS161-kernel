@@ -1,0 +1,142 @@
+<html>
+<head>
+<title>waitpid</title>
+<body bgcolor=#ffffff>
+<h2 align=center>waitpid</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+waitpid - wait for a process to exit
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;sys/wait.h&gt;<br>
+<br>
+pid_t<br>
+waitpid(pid_t <em>pid</em>, int *<em>status</em>, int <em>options</em>);
+
+<h3>Description</h3>
+
+Wait for the process specified by <em>pid</em> to exit, and return an
+encoded exit status in the integer pointed to by <em>status</em>. If
+that process has exited already, waitpid returns immediately. If that
+process does not exist, waitpid fails.
+<p>
+
+What it means for a process to move from "has exited already" to "does
+not exist", and when this occurs, is something you must decide.
+<p>
+
+If process P is "interested" in the exit code of process Q, process P
+should be able to find out that exit code by calling waitpid, even if
+Q exits somewhat before the time P calls waitpid. As described under
+<A HREF=_exit.html>_exit()</A>, precisely what is meant by "interested"
+is up to you.
+<p>
+
+You might implement restrictions or requirements on who may wait
+for which processes, like Unix does. You might also add a system
+call for one process to express interest in another process's exit
+code. If you do this, be sure to write a man page for the system 
+call, and discuss the rationale for your choices therein in your
+design document.
+<p>
+
+Note that in the absence of restrictions on who may wait for what, it
+is possible to set up situations that may result in deadlock. Your
+system must (of course) in some manner protect itself from these
+situations, either by prohibiting them or by detecting and resolving
+them.
+<p>
+
+In order to make the userlevel code that ships with OS/161 work, assume
+that a parent process is always interested in the exit codes of its
+child processes generated with <A HREF=fork.html>fork()</A>, unless it
+does something special to indicate otherwise.
+<p>
+
+The <em>options</em> argument should be 0. You are not required to
+implement any options. (However, your system should check to make sure
+that options you do not support are not requested.)
+<p>
+
+If you desire, you may implement the Unix option WNOHANG; this causes
+waitpid, when called for a process that has not yet exited, to return
+0 immediately instead of waiting.
+<p>
+
+The Unix option WUNTRACED, to ask for reporting of processes that stop
+as well as exit, is also defined in the header files, but implementing
+this feature is not required or necessary unless you are implementing
+job control.
+<p>
+
+You may also make up your own options if you find them helpful.
+However, please, document anything you make up.
+<p>
+
+The encoding of the exit status is comparable to Unix and is defined
+by the flags found in &lt;kern/wait.h&gt;. (Userlevel code should
+include &lt;sys/wait.h&gt; to get these definitions.) A process can
+exit by calling <A HREF=_exit.html>_exit()</A> or it can exit by
+receiving a fatal signal. In the former case the
+<tt>_MKWAIT_EXIT()</tt> macro should be used with the user-supplied
+exit code to prepare the exit status; in the latter, the
+<tt>_MKWAIT_SIG()</tt> macro (or <tt>_MKWAIT_CORE()</tt> if a core
+file was generated) should be used with the signal number. The result
+encoding also allows notification of processes that have stopped; this
+would be used in connection with job control and with
+<tt>ptrace</tt>-based debugging if you were to implement those things.
+<p>
+
+To <em>read</em> the wait status, use the macros <tt>WIFEXITED()</tt>,
+<tt>WIFSIGNALED()</tt>, and/or <tt>WIFSTOPPED()</tt> to find out what
+happened, and then <tt>WEXITSTATUS()</tt>, <tt>WTERMSIG()</tt>, or
+<tt>WSTOPSIG()</tt> respectively to get the exit code or signal
+number. If <tt>WIFSIGNALED()</tt> is true, <tt>WCOREDUMP()</tt> can be
+used to check if a core file was generated. This is the same as Unix,
+although the value encoding is different from the historic Unix
+format.
+<p>
+
+<h3>Return Values</h3>
+
+waitpid returns the process id whose exit status is reported in
+<em>status</em>. In OS/161, this is always the value of <em>pid</em>.
+<p>
+
+If you implement WNOHANG, and WNOHANG is given, and the process
+specified by <em>pid</em> has not yet exited, waitpid returns 0.
+<p>
+
+(In Unix, but not by default OS/161, you can wait for any of several
+processes by passing magic values of <em>pid</em>, so this return
+value can actually be useful.)
+<p>
+
+On error, -1 is returned, and errno is set to a suitable error code
+for the error condition encountered.
+
+<h3>Errors</h3>
+
+The following error codes should be returned under the conditions
+given. Other error codes may be returned for other errors not
+mentioned here.
+
+<blockquote><table width=90%>
+<td width=10%>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>EINVAL</td>	<td>The <em>options</em> argument requested invalid or
+			unsupported options.</td></tr>
+<tr><td>ECHILD</td>	<td>The <em>pid</em> argument named a process
+			that the current process was not interested
+			in or that has not yet exited.</td></tr>
+<tr><td>ESRCH</td>	<td>The <em>pid</em> argument named a
+			nonexistent process.</td></tr>
+<tr><td>EFAULT</td>	<td>The <em>status</em> argument was an 
+			invalid pointer.</td></tr>
+</table></blockquote>
+
+</body>
+</html>

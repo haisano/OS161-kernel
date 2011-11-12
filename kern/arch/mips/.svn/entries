@@ -1,0 +1,46 @@
+10
+
+dir
+150
+https://silo.cs.indiana.edu:5436/svn/knkumar/tags/asst4-end/os161/kern/arch/mips
+https://silo.cs.indiana.edu:5436/svn/knkumar
+
+
+
+2011-04-30T10:52:58.241010Z
+140
+knkumar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+16dcf482-280a-40d8-8cd4-2e8997397a18
+
+vm
+dir
+
+include
+dir
+
+locore
+dir
+
+conf
+dir
+
+thread
+dir
+
+syscall
+dir
+

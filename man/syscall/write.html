@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>write</title>
+<body bgcolor=#ffffff>
+<h2 align=center>write</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+write - write data to file
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;unistd.h&gt;<br>
+<br>
+int<br>
+write(int <em>fd</em>, const void *<em>buf</em>, size_t <em>nbytes></em>);
+
+<h3>Description</h3>
+
+write writes up to <em>buflen</em> bytes to the file specified by
+<em>fd</em>, at the location in the file specified by the current
+seek position of the file, taking the data from the space pointed
+to by <em>buf</em>. The file must be open for writing.
+<p>
+
+The current seek position of the file is advanced by the number of
+bytes written.
+<p>
+
+Each write (or <A HREF=read.html>read</A>) operation is atomic
+relative to other I/O to the same file.
+<p>
+
+<h3>Return Values</h3>
+
+The count of bytes written is returned. This count should be
+positive. A return value of 0 means that nothing could be written,
+but that no error occurred; this only occurs at end-of-file on
+fixed-size objects. On error, write returns -1 and sets 
+<A HREF=errno.html>errno</A> to a suitable error code for the error
+condition encountered.
+<p>
+
+Note that in some cases, particularly on devices, fewer than
+<em>buflen</em> (but greater than zero) bytes may be written. This
+depends on circumstances and does not necessarily signify
+end-of-file. In most cases, one should loop to make sure that all
+output has actually been written.
+<p>
+
+<h3>Errors</h3>
+
+The following error codes should be returned under the conditions
+given. Other error codes may be returned for other errors not
+mentioned here.
+
+<blockquote><table width=90%>
+<td width=10%>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>EBADF</td>	<td><em>fd</em> is not a valid file descriptor, or was
+			not opened for writing.</td></tr>
+<tr><td>EFAULT</td>	<td>Part or all of the address space pointed to by
+			<em>buf</em> is invalid.</td></tr>
+<tr><td>ENOSPC</td>	<td>There is no free space remaining on the filesystem
+			containing the file.</td></tr>
+<tr><td>EIO</td>	<td>A hardware I/O error occurred writing 
+			the data.</td></tr>
+</table></blockquote>
+
+</body>
+</html>

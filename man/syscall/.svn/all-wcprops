@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall
+END
+sync.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/sync.html
+END
+symlink.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/symlink.html
+END
+reboot.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/reboot.html
+END
+write.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/write.html
+END
+ftruncate.html
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/ftruncate.html
+END
+__time.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/__time.html
+END
+sbrk.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/sbrk.html
+END
+lseek.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/lseek.html
+END
+rename.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/rename.html
+END
+ioctl.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/ioctl.html
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/Makefile
+END
+dup2.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/dup2.html
+END
+execv.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/execv.html
+END
+__getcwd.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/__getcwd.html
+END
+getpid.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/getpid.html
+END
+rmdir.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/rmdir.html
+END
+fstat.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/fstat.html
+END
+fsync.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/fsync.html
+END
+errno.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/errno.html
+END
+lstat.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/lstat.html
+END
+readlink.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/readlink.html
+END
+chdir.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/chdir.html
+END
+build
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/build
+END
+remove.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/remove.html
+END
+pipe.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/pipe.html
+END
+link.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/link.html
+END
+getdirentry.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/getdirentry.html
+END
+open.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/open.html
+END
+fork.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/fork.html
+END
+waitpid.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/waitpid.html
+END
+close.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/close.html
+END
+mkdir.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/mkdir.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/index.html
+END
+_exit.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/_exit.html
+END
+stat.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/stat.html
+END
+read.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/man/syscall/read.html
+END

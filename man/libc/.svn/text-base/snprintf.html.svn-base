@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>snprintf</title>
+<body bgcolor=#ffffff>
+<h2 align=center>snprintf</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+snprintf - print formatted text to string
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;unistd.h&gt;<br>
+<br>
+int<br>
+snprintf(char *<em>buf</em>, size_t <em>buflen</em>, 
+const char *<em>format</em>, ...);<br>
+<br>
+int<br>
+vsnprintf(char *<em>buf</em>, size_t <em>buflen</em>, 
+const char *<em>format</em>, va_list);<br>
+
+<h3>Description</h3>
+
+snprintf performs <A HREF=printf.html>printf</A>-style formatting on
+the string <em>format</em> and subsequent arguments. The resulting
+string is placed in <em>buf</em>, which is a memory area at least
+<em>buflen</em> bytes long. A null terminator is always added to
+<em>buf</em>; the space for this is presumed to be counted in
+<em>buflen</em>.
+<p>
+
+vsnprintf is the same as snprintf, except that the subsequent
+arguments are presumed to have already been collected using the
+<A HREF=stdarg.html>stdarg</A> facility.
+<p>
+
+<h3>Return Values</h3>
+snprintf and vsnprintf return the number of characters printed.
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>strtok</title>
+<body bgcolor=#ffffff>
+<h2 align=center>strtok</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+strtok - tokenize string
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;string.h&gt;<br>
+<br>
+char *<br>
+strtok(char *<em>string</em>, const char *<em>separators</em>);
+
+<h3>Description</h3>
+
+strtok splits up the string <em>string</em> into fields using the
+characters found in <em>separators</em> as delimiters. The delimiters
+found are discarded. Multiple delimiter characters in a row are
+treated as a single delimiter.
+<p>
+
+When first called, strtok returns the first field of <em>string</em>.
+To retrieve successive fields of <em>string</em>, call strtok again
+repeatedly, passing NULL as the first argument. When no more fields
+are left, NULL is returned. If the string is empty or contains only
+delimiters, NULL will be returned on the first call.
+<p>
+
+<h3>Cautions</h3>
+
+Note that the state used to remember <em>string</em> across calls is
+global. Thus, strtok cannot be used from more than one thread at a
+time in a multithreaded program, nor can it be used in a subroutine
+called from within a loop that itself uses strtok. If these
+restrictions are problematic, use <A HREF=strtok_r.html>strtok_r</A>.
+<p>
+
+The behavior if strtok is called again without passing a new
+<em>string</em> after it has returned NULL is undefined.
+<p>
+
+The behavior if strtok is called with the first argument NULL without
+having first passed a valid <em>string</em> is also undefined.
+<p>
+
+<h3>Return Values</h3>
+strtok returns successive components of the passed-in string, and
+NULL when no more remain.
+
+</body>
+</html>

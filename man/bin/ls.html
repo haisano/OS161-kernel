@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>ls</title>
+<body bgcolor=#ffffff>
+<h2 align=center>ls</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+ls - list files or directory contents
+
+<h3>Synopsis</h3>
+/bin/ls [-adlRs] [<em>path</em>...]
+
+<h3>Description</h3>
+
+ls lists the filesystem objects specified on the command line. If they
+are directories, the contents of the directories are listed (unless
+the -d option is used).
+<p>
+
+If the -a option is given, filenames beginning with dot (.) will be
+listed. Ordinarily, they are skipped.
+<p>
+
+If the -d option is given, directory contents will not be listed; the
+directories themselves will be.
+<p>
+
+If the -l option is given, a long format listing showing the file
+size, type, and link count will be displayed instead of just the
+filenames.
+<p>
+
+If the -R option is given, subdirectories encountered will be listed
+recursively.
+<p>
+
+If the -s option is given, the number of filesystem blocks used by
+each object will be displayed in addition to other information.
+<p>
+
+If no <em>paths</em> are specified, the current directory is assumed.
+
+<h3>Requirements</h3>
+
+ls uses the following syscalls:
+<ul>
+<li> <A HREF=../syscall/open.html>open</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/fstat.html>fstat</A>
+<li> <A HREF=../syscall/getdirentry.html>getdirentry</A>
+<li> <A HREF=../syscall/close.html>close</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+ls should function properly once the file system assignment is
+completed.
+
+</body>
+</html>

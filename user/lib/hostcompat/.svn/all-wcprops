@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/lib/hostcompat
+END
+build
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/lib/hostcompat/build
+END
+time.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/lib/hostcompat/time.c
+END
+hostcompat.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/lib/hostcompat/hostcompat.c
+END
+hostcompat.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/lib/hostcompat/hostcompat.h
+END
+err.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/lib/hostcompat/err.c
+END
+host-err.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/lib/hostcompat/host-err.h
+END
+.depend
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/lib/hostcompat/.depend
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/lib/hostcompat/Makefile
+END

@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>malloctest</title>
+<body bgcolor=#ffffff>
+<h2 align=center>malloctest</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+malloctest - some simple tests for userlevel malloc
+
+<h3>Synopsis</h3>
+/testbin/malloctest [<em>test</em>...]
+
+<h3>Description</h3>
+
+malloctest contains 7 tests, 1-7. These may be run interactively or
+from the command line.
+<p>
+
+Test 1 checks if all the bytes we ask for actually get allocated.
+<p>
+
+Test 2 checks if malloc gracefully handles failing requests. This test
+assumes that malloc will eventually fail if one keeps allocating
+enough memory, instead of promising memory it can't deliver and
+then (perhaps) killing processes when it runs out. More detail
+regarding this condition can be found in comments in the source code.
+<p>
+
+Test 3 also checks if malloc gracefully handles failing requests, and
+thus has the same restrictions as test 2.
+<p>
+
+Test 4 attempts to check if malloc coalesces the free list properly.
+This test is only meant for first-fit, next-fit, or best-fit
+allocators; anything else will most likely confuse it. Running test 4
+after other tests may confuse it as well.
+<p>
+
+Tests 5-7 are a randomized stress test. Test 5 uses pseudorandom seed
+0. Test 6 seeds the random generator from the
+<A HREF=../dev/random.html>random:</A> device. Test 7 prompts you for
+a specific seed.
+<p>
+
+<h3>Requirements</h3>
+
+malloctest uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/open.html>open</A>
+<li> <A HREF=../syscall/read.html>read</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/close.html>close</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+malloctest also requires a user-level malloc/free implementation.
+<p>
+
+Your system should pass all the malloctest tests, subject to the
+conditions described above, once your user-level malloc is complete.
+
+</body>
+</html>

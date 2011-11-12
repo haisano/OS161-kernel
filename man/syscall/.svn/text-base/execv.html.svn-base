@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>execv</title>
+<body bgcolor=#ffffff>
+<h2 align=center>execv</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+execv - execute a program
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;unistd.h&gt;<br>
+<br>
+int<br>
+execv(const char *<em>program</em>, char **<em>args</em>);
+
+<h3>Description</h3>
+
+execv replaces the currently executing program with a newly loaded
+program image. This occurs within one process; the process id is
+unchanged.
+<p>
+
+The pathname of the program to run is passed as <em>program</em>. The
+<em>args</em> argument is an array of 0-terminated strings. The array
+itself should be terminated by a NULL pointer.
+<p>
+
+The argument strings should be copied into the new process as the
+new process's argv[] array. In the new process, argv[argc] must be
+NULL.
+<p>
+
+By convention, argv[0] in new processes contains the name that was
+used to invoke the program. This is not necessarily the same as
+<em>program</em>, and furthermore is only a convention and should not
+be enforced by the kernel.
+<p>
+
+The process file table and current working directory are not modified
+by execve.
+
+<h3>Return Values</h3>
+On success, execv does not return; instead, the new program begins
+executing. On failure, execv returns -1, and sets
+<A HREF=errno.html>errno</A> to a suitable error code for the error
+condition encountered.
+
+<h3>Errors</h3>
+
+The following error codes should be returned under the conditions
+given. Other error codes may be returned for other errors not
+mentioned here.
+
+<blockquote><table width=90%>
+<tr><td width=10%>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>ENODEV</td>		<td>The device prefix of <em>program</em> did
+				not exist.</td></tr>
+<tr><td>ENOTDIR</td>	<td>A non-final component of <em>program</em>
+				was not a directory.</td></tr>
+<tr><td>ENOENT</td>	<td><em>program</em> did not exist.</td></tr>
+<tr><td>EISDIR</td>	<td><em>program</em> is a directory.</td></tr>
+<tr><td>ENOEXEC</td>	<td><em>program</em> is not in a recognizable
+				executable file format, was for the
+				wrong platform, or contained invalid
+				fields.</td></tr>
+<tr><td>ENOMEM</td>	<td>Insufficient virtual memory is available.</td></tr>
+<tr><td>E2BIG</td>		<td>The total size of the argument strings is
+				too large.</td></tr>
+<tr><td>EIO</td>	<td>A hard I/O error occurred.</td></tr>
+<tr><td>EFAULT</td>	<td>One of the args is an invalid pointer.</td></tr>
+</table></blockquote>
+
+</body>
+</html>

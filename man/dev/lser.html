@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>lser</title>
+<body bgcolor=#ffffff>
+<h2 align=center>lser</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+lser - LAMEbus serial port
+
+<h3>Synopsis</h3>
+device lser* at lamebus*
+
+<h3>Description</h3>
+
+lser is the driver for the CS161 LAMEbus serial port card. It does not
+provide any internal buffering; that is expected to happen at a higher
+level. It can, however, operate in either polled or interrupt-driven
+output mode.
+<p>
+
+The <A HREF=con.html>system console</A> device can be attached to an
+lser instance.
+
+<h3>See Also</h3>
+<A HREF=lamebus.html>lamebus</A>
+
+</body>
+</html>

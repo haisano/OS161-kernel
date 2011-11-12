@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode
+END
+notdi2.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/notdi2.c
+END
+lshldi3.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/lshldi3.c
+END
+anddi3.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/anddi3.c
+END
+ucmpdi2.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/ucmpdi2.c
+END
+umoddi3.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/umoddi3.c
+END
+qdivrem.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/qdivrem.c
+END
+udivdi3.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/udivdi3.c
+END
+negdi2.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/negdi2.c
+END
+lshrdi3.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/lshrdi3.c
+END
+xordi3.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/xordi3.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/README
+END
+cmpdi2.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/cmpdi2.c
+END
+moddi3.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/moddi3.c
+END
+divdi3.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/divdi3.c
+END
+longlong.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/longlong.h
+END
+ashldi3.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/ashldi3.c
+END
+adddi3.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/adddi3.c
+END
+iordi3.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/iordi3.c
+END
+subdi3.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/subdi3.c
+END
+muldi3.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/muldi3.c
+END
+ashrdi3.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/common/gcc-millicode/ashrdi3.c
+END

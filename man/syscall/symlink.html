@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>symlink</title>
+<body bgcolor=#ffffff>
+<h2 align=center>symlink</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+symlink - create symbolic link
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;unistd.h&gt;<br>
+<br>
+int<br>
+symlink(const char *<em>oldname</em>, const char *<em>linkname</em>);
+
+<h3>Description</h3>
+
+symlink creates a symbolic link. The symlink itself is named
+<em>linkname</em>, and it points to <em>oldname</em>.
+<p>
+
+<em>oldname</em> need not exist or be on the same filesystem.
+
+<h3>Return Values</h3>
+On success, symlink returns 0. On error, -1 is returned, and
+<A HREF=errno.html>errno</A> is set according to the error
+encountered.
+
+<h3>Errors</h3>
+
+The following error codes should be returned under the conditions
+given. Other error codes may be returned for other errors not
+mentioned here.
+
+<blockquote><table width=90%>
+<td width=10%>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>ENODEV</td>	<td>The device prefix of <em>filename</em> did
+				not exist.</td></tr>
+<tr><td>ENOTDIR</td>	<td>A non-final component of <em>linkname</em>
+				was not a directory.</td></tr>
+<tr><td>ENOENT</td>	<td>A non-final component of <em>linkname</em>
+				did not exist.</td></tr>
+<tr><td>EEXIST</td>	<td><em>linkname</em> already exists.</td></tr>
+<tr><td>ENOSPC</td>	<td>The filesystem that was to hold the link
+				is full.</td></tr>
+<tr><td>EIO</td>	<td>A hard I/O error occurred.</td></tr>
+<tr><td>EFAULT</td>	<td><em>linkname</em> or <em>oldname</em> was
+				an invalid pointer.</td></tr>
+</table></blockquote>
+
+</body>
+</html>

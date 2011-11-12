@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>hog</title>
+<body bgcolor=#ffffff>
+<h2 align=center>hog</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+hog - waste cpu
+
+<h3>Synopsis</h3>
+/testbin/hog
+
+<h3>Description</h3>
+
+hog does nothing but burn cpu. It is not substantially different from
+<A HREF=guzzle.html>guzzle</A>.
+
+<h3>Requirements</h3>
+
+hog uses only the <A HREF=../syscall/_exit.html>_exit</A> system call.
+<p>
+
+It is only likely to be useful for testing the scheduler.
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>calloc</title>
+<body bgcolor=#ffffff>
+<h2 align=center>calloc</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+calloc - allocate and clear memory
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;stdlib.h&gt;<br>
+<br>
+void *<br>
+calloc(size_t <em>number</em>, size_t <em>size</em>);
+
+<h3>Description</h3>
+
+calloc allocates <em>number</em>*<em>size</em> bytes of memory, zeros
+it, and returns a pointer to it. It is exactly equivalent to 
+<A HREF=malloc.html>malloc</A>(<em>number</em>*<em>size</em>) followed
+by <A HREF=bzero.html>bzero</A>.
+
+<h3>Return Values</h3>
+calloc returns a pointer to the memory allocated. If memory cannot be
+obtained, NULL is returned.
+
+<h3>See Also</h3>
+<A HREF=malloc.html>malloc</A>,
+<A HREF=realloc.html>realloc</A>,
+<A HREF=free.html>free</A>
+
+</body>
+</html>

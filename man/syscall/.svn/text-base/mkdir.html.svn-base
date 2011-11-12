@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>mkdir</title>
+<body bgcolor=#ffffff>
+<h2 align=center>mkdir</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+mkdir - create directory
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;sys/stat.h&gt;<br>
+<br>
+int<br>
+mkdir(const char *<em>pathname</em>, int <em>mode</em>);
+
+<h3>Description</h3>
+
+mkdir creates a directory named <em>name</em>, where <em>name</em> is
+the last filename component in <em>pathname</em>. All the directories
+named in the prefix portion of <em>pathname</em> must exist and must
+in fact be directories, not ordinary files. The name <em>name</em>
+must not already exist. The new directory must be created atomically.
+<p>
+
+The <em>mode</em> argument can be ignored in OS/161.
+<p>
+
+<h3>Return Values</h3>
+On success, mkdir returns 0. On error, -1 is returned, and
+<A HREF=errno.html>errno</A> is set according to the error
+encountered.
+
+<h3>Errors</h3>
+
+The following error codes should be returned under the conditions
+given. Other error codes may be returned for other errors not
+mentioned here.
+
+<blockquote><table width=90%>
+<td width=10%>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>ENODEV</td>		<td>The device prefix of <em>pathname</em> did
+				not exist.</td></tr>
+<tr><td>ENOTDIR</td>	<td>A non-final component of <em>pathname</em>
+				was not a directory.</td></tr>
+<tr><td>ENOENT</td>		<td>A non-final component of <em>pathname</em>
+				did not exist.</td></tr>
+<tr><td>EEXIST</td>		<td>An object by the name <em>pathname</em>
+				already exists.</td></tr>
+<tr><td>ENOSPC</td>		<td>The filesystem the directory was to be
+				created on is full.</td></tr>
+<tr><td>EIO</td>		<td>A hard I/O error occurred.</td></tr>
+<tr><td>EFAULT</td>		<td><em>pathname</em> was an invalid pointer.</td></tr>
+</table></blockquote>
+
+</body>
+</html>

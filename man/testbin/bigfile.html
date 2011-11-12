@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>bigfile</title>
+<body bgcolor=#ffffff>
+<h2 align=center>bigfile</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+bigfile - create a large file in small chunks
+
+<h3>Synopsis</h3>
+/testbin/bigfile <em>filename</em> <em>size</em>
+
+<h3>Description</h3>
+
+bigfile creates a file of the specified size in fairly small chunks.
+
+<h3>Requirements</h3>
+
+bigfile uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/open.html>open</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/close.html>close</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+bigfile should run on emufs once the basic system calls are complete,
+and should run on SFS once the file system assignment is complete.
+Sufficiently small files should work on SFS even before that point.
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>console</title>
+<body bgcolor=#ffffff>
+<h2 align=center>con</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+con - system login console
+
+<h3>Synopsis</h3>
+device con0 at lser*<br>
+device con0 at lscreen*<br>
+
+<h3>Description</h3>
+
+The generic console device can be attached to either a serial port or
+a memory-mapped screen. It provides no internal buffering or input
+editing. You may add such features if you desire.
+<p>
+
+The in-kernel kprintf() routine and its relatives send their
+output to the console device.
+
+<h3>Files</h3>
+
+<tt>con:</tt>
+
+<h3>See Also</h3>
+
+<A HREF=lser.html>lser</A>,
+<A HREF=lscreen.html>lscreen</A>
+
+</body>
+</html>

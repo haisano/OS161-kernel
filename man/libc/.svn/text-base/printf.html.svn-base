@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>printf</title>
+<body bgcolor=#ffffff>
+<h2 align=center>printf</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+printf - print formatted output
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;stdio.h&gt;<br>
+<br>
+int<br>
+printf(const char *<em>format</em>, ...);
+
+<h3>Description</h3>
+
+printf prints formatted text to standard output. The text is generated
+from the <em>format</em> argument and subsequent arguments according
+to the following rules.
+<p>
+
+Characters in <em>format</em> that are not the percent sign (`%') are
+printed verbatim. When a percent sign is encountered, the next
+argument of the arguments following <em>format</em> is retrieved and
+printed. The type of the argument expected, as well as some simple
+formatting instructions, are derived from the characters following the
+percent sign.
+<p>
+
+The following characters designate types to print. One of these
+characters concludes the format sequence begun with a percent sign,
+and also determines the type expected as an argument.
+
+<blockquote>
+<table width=90%>
+<tr><td width=5%>%</td>	<td>A percent sign is printed; no argument 
+				is consumed.</td></tr>
+<tr><td>c</td>	<td>Character (char, passed as int)</td></tr>
+<tr><td>d</td>	<td>Signed integer printed in decimal</td></tr>
+<tr><td>o</td>	<td>Unsigned integer printed in octal</td></tr>
+<tr><td>p</td>	<td>Pointer (void *)</td></tr>
+<tr><td>s</td>	<td>String (const char *)</td></tr>
+<tr><td>u</td>	<td>Unsigned integer printed in decimal</td></tr>
+<tr><td>x</td>	<td>Unsigned integer printed in hexadecimal</td></tr>
+<tr><td>X</td>	<td>Unsigned integer printed in uppercase hex</td></tr>
+</table>
+</blockquote>
+
+The following characters are modifiers; they can be found between the
+percent sign and the type designator.
+
+<blockquote>
+<table width=90%>
+<tr><td width=5% valign=top>#</td> <td>Select an "alternate
+				format". On integer formats this
+				causes the C base prefix to be printed
+				along with the integer. On other
+				formats, this has no effect.</td></tr>
+<tr><td valign=top>l</td> <td>Assume an integer argument is long or
+				unsigned long instead of int or
+				unsigned int.</td></tr> 
+<tr><td valign=top>0-9</td> <td>Digits are treated as a decimal number,
+				which is considered to be the field
+				width. The argument is printed 
+				right-aligned in a field that many
+				characters wide.</td></tr>
+<tr><td valign=top>0</td> <td>If the field width has a leading 0, the
+				padding character for alignment is
+				made 0 (zero) instead of
+				space.</td></tr>
+<tr><td valign=top>-</td> <td>If a field width is given, use it for
+				left alignment instead of right
+				alignment.</td></tr>
+</table>
+</blockquote>
+
+<h3>Restrictions</h3>
+
+Note that this is a limited printf implementation - it has no support
+for precisions (".number" as a modifier), floating-point formats,
+field widths passed as arguments, or the rarely-used `+' and ` '
+modifiers.
+
+<h3>Return Values</h3>
+printf returns the number of characters printed.
+
+</body>
+</html>

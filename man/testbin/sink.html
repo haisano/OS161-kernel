@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>sink</title>
+<body bgcolor=#ffffff>
+<h2 align=center>sink</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+sink - accept and throw away console input
+
+<h3>Synopsis</h3>
+/testbin/sink
+
+<h3>Description</h3>
+
+sink reads characters from standard input and throws them away. It is
+perhaps of some use for testing standard input or console devices.
+
+<h3>Requirements</h3>
+
+sink uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/read.html>read</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+sink should function properly once the basic system calls are
+complete.
+
+</body>
+</html>

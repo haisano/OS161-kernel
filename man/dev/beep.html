@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>beep</title>
+<body bgcolor=#ffffff>
+<h2 align=center>beep</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+beep - console beep device
+
+<h3>Synopsis</h3>
+device beep0 at ltimer*
+
+<h3>Description</h3>
+
+The beep device is an abstract entry point for in-kernel beeping. The
+beep() function is provided, and redirected to the first attached
+device. If no beep device is available, beeping will cause a warning
+to be printed to the system console.
+<p>
+
+<h3>See Also</h3>
+
+<A HREF=ltimer.html>ltimer</A>
+
+</body>
+</html>

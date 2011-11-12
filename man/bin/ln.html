@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>ln</title>
+<body bgcolor=#ffffff>
+<h2 align=center>ln</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+ln - link files
+
+<h3>Synopsis</h3>
+/bin/ln <em>oldfile</em> <em>newfile</em>
+<br>
+/bin/ln -s <em>oldfile</em> <em>newfile</em>
+
+<h3>Description</h3>
+
+ln creates links to files. The first usage creates a hard link, that
+is, an additional name for the <strong>same</strong> file. The second
+usage, with the -s option, creates a symbolic link, a special
+filesystem entry that redirects accesses back to the first original
+file.
+<p>
+
+The symlink created is of the form <em>newfile</em> -> <em>oldfile</em>.
+<p>
+
+<h3>Requirements</h3>
+
+ln uses the following syscalls:
+<ul>
+<li><A HREF=../syscall/link.html>link</A>
+<li><A HREF=../syscall/symlink.html>symlink</A>
+<li><A HREF=../syscall/write.html>write</A>
+<li><A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+ln without the -s option should work once (or if) you implement hard
+links.  ln with the -s option should work once (or if) you implement
+symbolic links. Check your assignments for when (or if) you need to
+implement these features.
+<p>
+
+ln is able to create symlinks even if hard links are not implemented,
+and vice versa.
+
+<h3>See Also</h3>
+
+<A HREF=cp.html>cp</A>, <A HREF=mv.html>mv<A>
+
+</body>
+</html>

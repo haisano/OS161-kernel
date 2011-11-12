@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>reboot</title>
+<body bgcolor=#ffffff>
+<h2 align=center>reboot</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+reboot - reboot or halt system
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;unistd.h&gt;<br>
+<br>
+int<br>
+reboot(int <em>code</em>);
+
+<h3>Description</h3>
+
+reboot reboots or shuts down the system. The specific action depends
+on the <em>code</em> passed:
+<blockquote><table width=90%>
+<td width=10%>RB_REBOOT</td>	<td>The system is rebooted.</td></tr>
+<td width=10%>RB_HALT</td>	<td>The system is halted.</td></tr>
+<td width=10%>RB_POWEROFF</td>	<td>The system is powered off.</td></tr>
+</table></blockquote>
+
+<h3>Return Values</h3>
+
+On success, reboot does not return. On error, -1 is returned, and
+<A HREF=errno.html>errno</A> is set according to the error
+encountered.
+
+<h3>Errors</h3>
+
+The following error codes should be returned under the conditions
+given. Other error codes may be returned for other errors not
+mentioned here.
+
+<blockquote><table width=90%>
+<td width=10%>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>EINVAL</td>		<td><em>code</em> was not a valid
+				value.</td></tr>
+<tr><td>EPERM</td>		<td>The current process does not have
+				sufficient privilege to halt the
+				system.</td></tr>
+</table></blockquote>
+
+</body>
+</html>

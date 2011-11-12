@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>halt</title>
+<body bgcolor=#ffffff>
+<h2 align=center>halt</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+halt - halt system
+
+<h3>Synopsis</h3>
+/sbin/halt
+
+<h3>Description</h3>
+
+halt shuts the system down. A clean shutdown is performed, flushing
+buffers to disk, unmounting filesystems, and so forth.
+<p>
+
+Once shutdown is complete, halt stops execution of the operating
+system. What this entails depends on the platform. On platforms with a
+hardware boot monitor, it normally returns to the boot monitor. On
+software-based platforms, such as System/161, it normally terminates
+the software simulation. On other platforms the system will generally
+wait for a keystroke on the console and then reboot.
+<p>
+
+<h3>Requirements</h3>
+
+halt uses the <A HREF=../syscall/reboot.html>reboot</A> system call.
+<p>
+
+halt will function properly even before you do any work on OS/161.
+
+<h3>See Also</h3>
+
+<A HREF=../bin/sync.html>/bin/sync</A><br>
+<A HREF=reboot.html>reboot</A>, <A HREF=poweroff.html>poweroff</A>
+
+</body>
+</html>

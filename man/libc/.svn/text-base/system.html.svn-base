@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>system</title>
+<body bgcolor=#ffffff>
+<h2 align=center>system</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+system - run command as subprocess
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;stdlib.h&gt;<br>
+<br>
+int<br>
+system(const char *<em>command</em>);
+
+<h3>Description</h3>
+
+The system routine executes <em>command</em> as if it were typed into
+the shell.
+
+<h3>Return Values</h3>
+On success, system returns the exit status returned from 
+<A HREF=../syscall/waitpid.html>waitpid</A>. 
+On error, -1 is returned, and <A HREF=../syscall/errno.html>errno</A> 
+is set according to the error encountered.
+
+<h3>Errors</h3>
+
+Any of the errors from <A HREF=../syscall/fork.html>fork</A> or
+<A HREF=../syscall/waitpid.html>waitpid</A>. Errors generated during
+<A HREF=../syscall/execv.html>execv</A> cannot readily be reported
+back in detail.
+
+<h3>Restrictions</h3>
+
+In OS/161 there may be no shell and when there is the shell's behavior
+and syntax is not specified. For this reason we make no assumptions
+about the shell's operation, and assume system() cannot reliably use
+the shell to parse and execute <em>command</em>. system() does this
+itself, in a way which may not necessarily be compatible with the
+shell as it finally appears. You may want to change system() to invoke
+the shell in a suitable fashion when/if a shell is available.
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>readlink</title>
+<body bgcolor=#ffffff>
+<h2 align=center>readlink</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+readlink - fetch symbolic link contents
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;unistd.h&gt;<br>
+<br>
+int<br>
+readlink(const char *<em>path</em>, char *<em>buf</em>, size_t <em>len</em>);
+
+<h3>Description</h3>
+
+readlink retrieves the contents of the symbolic link named by
+<em>path</em> and places them in the buffer <em>buf</em>. At most
+<em>len</em> bytes are written.
+<p>
+
+readlink does not include a null terminator in <em>buf</em>.
+
+<h3>Return Values</h3>
+
+readlink returns the number of characters transferred. If an error
+occurs, -1 is returned, and <A HREF=errno.html>errno</A> is set
+according to the error encountered.
+
+<h3>Errors</h3>
+
+The following error codes should be returned under the conditions
+given. Other error codes may be returned for other errors not
+mentioned here.
+
+<blockquote><table width=90%>
+<td width=10%>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>ENODEV</td>		<td>The device prefix of <em>filename</em> did
+				not exist.</td></tr>
+<tr><td>ENOTDIR</td>	<td>A non-final component of <em>path</em>
+				was not a directory.</td></tr>
+<tr><td>ENOENT</td>		<td>The named file does not exist.</td></tr>
+<tr><td>EINVAL</td>		<td>The named file is not a symlink.</td></tr>
+<tr><td>EIO</td>		<td>A hard I/O error occurred.</td></tr>
+<tr><td>EFAULT</td>		<td><em>buf</em> or <em>path</em> points to an 
+				invalid address.</td></tr>
+</table></blockquote>
+
+</body>
+</html>

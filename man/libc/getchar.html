@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>getchar</title>
+<body bgcolor=#ffffff>
+<h2 align=center>getchar</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+getchar - read character from standard input
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;stdio.h&gt;<br>
+<br>
+int<br>
+getchar(void);
+
+<h3>Description</h3>
+
+getchar reads a single character from standard input. The character is
+converted to unsigned char before being returned; thus, EOF, which is
+negative, is not a possible successful return value.
+
+<h3>Return Values</h3>
+On success, getchar returns the character read. On error, or end of
+file, EOF is returned.
+
+<h3>Errors</h3>
+
+Any of the errors associated with <A HREF=../syscall/read>read</A>
+may occur.
+
+</body>
+</html>

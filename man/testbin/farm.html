@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>farm</title>
+<body bgcolor=#ffffff>
+<h2 align=center>farm</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+farm - run some hogs and cats
+
+<h3>Synopsis</h3>
+/testbin/farm
+
+<h3>Description</h3>
+
+farm runs three copies of <A HREF=hog.html>hog</A> and one copy of
+<A HREF=../bin/cat.html>/bin/cat</A>.
+<p>
+
+The cat process reads and prints the file <strong>catfile</strong>,
+which you should create in advance.
+
+<h3>Requirements</h3>
+
+farm uses the following system calls:
+<ul>
+<li> <A HREF=../syscall/fork.html>fork</A>
+<li> <A HREF=../syscall/execv.html>execv</A>
+<li> <A HREF=../syscall/write.html>write</A>
+<li> <A HREF=../syscall/_exit.html>_exit</A>
+</ul>
+
+The cat subprocess spawned by farm uses these additional system calls:
+<ul>
+<li><A HREF=../syscall/open.html>open</A>
+<li><A HREF=../syscall/read.html>read</A>
+<li><A HREF=../syscall/close.html>close</A>
+</ul>
+
+farm is only likely to be useful for testing the scheduler.
+
+<h3>Bugs</h3>
+
+farm does not wait for its child processes to finish.
+
+</body>
+</html>

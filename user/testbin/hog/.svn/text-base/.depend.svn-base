@@ -1,0 +1,4 @@
+
+$(MYBUILDDIR)/hog.o: \
+ hog.c
+

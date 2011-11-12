@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/vfs
+END
+device.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/vfs/device.c
+END
+vfslookup.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/vfs/vfslookup.c
+END
+devnull.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/vfs/devnull.c
+END
+vfslist.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/vfs/vfslist.c
+END
+vfspath.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/vfs/vfspath.c
+END
+vnode.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/vfs/vnode.c
+END
+vfscwd.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/kern/vfs/vfscwd.c
+END

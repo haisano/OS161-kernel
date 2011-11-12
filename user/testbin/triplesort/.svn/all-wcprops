@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/triplesort
+END
+build
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/triplesort/build
+END
+triple.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/triplesort/triple.c
+END
+triple.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/triplesort/triple.h
+END
+triplesort.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/triplesort/triplesort.c
+END
+.depend
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/triplesort/.depend
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/knkumar/!svn/ver/144/tags/asst4-end/os161/user/testbin/triplesort/Makefile
+END

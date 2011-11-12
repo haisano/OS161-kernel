@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>pipe</title>
+<body bgcolor=#ffffff>
+<h2 align=center>pipe</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+pipe - create pipe object
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;unistd.h&gt;<br>
+<br>
+int<br>
+pipe(int *<em>fds</em>);
+
+<h3>Description</h3>
+
+The pipe call creates an anonymous pipe object in the system, and
+binds it to two file handles in the current process, one for the read
+end and one for the write end. (Pipes are unidirectional.)
+<p>
+
+Data written on the write end may be read from the read end. Once all
+references to the write end are closed, and all remaining data is
+read, further reads return EOF. If all references to the read end are
+closed before the write end is closed, further writes generate
+errors. The pipe object itself is destroyed when all references to
+both ends are closed.
+<p>
+
+<em>fds</em> is a pointer to two integers. A file handle for the read
+end of the pipe is stored in <em>fds</em>[0], and a file handle for
+the write end is stored in <em>fds</em>[1].
+<p>
+
+pipe is most often used in conjunction with <A HREF=dup2.html>dup2</A>
+and <A HREF=fork.html>fork</A> to send the standard output of one
+process to the standard input of another.
+<p>
+
+In POSIX, pipe I/O of data blocks smaller than a standard constant
+PIPE_BUF is guaranteed to be atomic. If you implement pipes, you need
+not necessarily implement POSIX semantics, but you should decide what
+sort of atomicity guarantees you wish to make and specify them
+carefully. 
+
+<h3>Return Values</h3>
+On success, pipe returns 0. On error, -1 is returned, and
+<A HREF=errno.html>errno</A> is set according to the error
+encountered.
+
+<h3>Errors</h3>
+
+The following error codes should be returned under the conditions
+given. Other error codes may be returned for other errors not
+mentioned here.
+
+<blockquote><table width=90%>
+<td width=10%>&nbsp;</td><td>&nbsp;</td></tr>
+<tr><td>EMFILE</td>		<td>The process's file table was full, or a
+				process-specific limit on open files
+				was reached.</td></tr>
+<tr><td>ENFILE</td>		<td>The system file table is full, if such a
+				thing exists, or a system-wide limit
+				on open files was reached.</td></tr>
+<tr><td>EFAULT</td>		<td><em>fds</em> was an invalid pointer.</td></tr>
+</table></blockquote>
+
+</body>
+</html>

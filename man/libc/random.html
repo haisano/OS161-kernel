@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>random</title>
+<body bgcolor=#ffffff>
+<h2 align=center>random</h2>
+<h4 align=center>OS/161 Reference Manual</h4>
+
+<h3>Name</h3>
+random - pseudorandom number generation
+
+<h3>Library</h3>
+Standard C Library (libc, -lc)
+
+<h3>Synopsis</h3>
+#include &lt;stdlib.h&gt;<br>
+<br>
+long<br>
+random(void);<br>
+<br>
+void<br>
+srandom(unsigned long <em>seed</em>);<br>
+
+<h3>Description</h3>
+
+random returns a number between 0 and 0x7fffffff (RAND_MAX). This
+number is selected using a rather complex generator which is believed
+to generate randomness of an acceptable (though not cryptographic)
+quality. Unlike with some generators, all bits of the values returned
+are random.
+<p>
+
+srandom initializes the generator state based on the passed-in
+<em>seed</em>. If srandom is not called, the sequence of numbers
+returned by random is the same as if srandom had been called with a
+<em>seed</em> of 1.
+<p>
+
+The implementation of random and srandom used in OS/161 is software
+developed by the University of California, Berkeley and its
+contributors.
+
+</body>
+</html>
